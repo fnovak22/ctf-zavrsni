@@ -1,5 +1,5 @@
 # DJ
-MUP-ova služba kibernetičke sigurnosti je uhitila poznatog DJ-a koji je osumnjičen za sudjelovanje u nedavnom hakerskom napadu na muzičke baze podataka. Tijekom pretrage pronađen pronađen je USB stick s ekskluzivnim pjesmama za koje istražitelji sumnjaju da sadrže informacije povezane s napadom. 
+MUP-ova služba kibernetičke sigurnosti je uhitila poznatog DJ-a koji je osumnjičen za sudjelovanje u nedavnom hakerskom napadu na glazbene baze podataka. Tijekom pretrage pronađen pronađen je USB stick s ekskluzivnim pjesmama za koje istražitelji sumnjaju da sadrže informacije povezane s napadom. 
 
 Možete li pomoći MUP-u u analizi ovih pjesama?
 
