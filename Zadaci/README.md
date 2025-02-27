@@ -7,19 +7,19 @@ Primjer flaga: ```CTFFOI[pr1mjer_fl4g4]```
 
 # Kategorije
 
-# # Forenzika
+## Forenzika
 Forenzika
 
-# # Web ranjivosti
+## Web ranjivosti
 Web ranjivosti
 
-# # Binarna eksploatacija
+## Binarna eksploatacija
 Binarna eksploatacija
 
-# # Reverzno inženjerstvo
+## Reverzno inženjerstvo
 Reverzno inženjerstvo
 
-# # Razno
+## Razno
 Razno
 
 
