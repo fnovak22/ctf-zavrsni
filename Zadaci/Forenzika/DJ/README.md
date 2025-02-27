@@ -3,4 +3,4 @@ SOA (Sigurnosno-obavještajna agencija) je uhitila poznatog DJ-a koji je osumnji
 
 Možete li pomoći SOA-i u analizi ovih pjesama?
 
-OVdje možeš preuzeti sadržaj DJ-ovog USB sticka: [DJ_usb.zip](https://github.com/fnovak22/ctf-zavrsni/raw/refs/heads/main/Zadaci/Forenzika/DJ/Datoteke/DJ_usb.zip)
+Ovdje možeš preuzeti sadržaj DJ-ovog USB sticka: [DJ_usb.zip](https://github.com/fnovak22/ctf-zavrsni/raw/refs/heads/main/Zadaci/Forenzika/DJ/Datoteke/DJ_usb.zip)
