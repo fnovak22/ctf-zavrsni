@@ -7,7 +7,7 @@ Primjer flaga: ```CTFFOI[pr1mjer_fl4g4]```
 
 # Kategorije
 
-## Forenzika
+## [Forenzika](https://github.com/fnovak22/ctf-zavrsni/tree/main/Zadaci/Forenzika)
 Forenzika
 
 ## Web ranjivosti
