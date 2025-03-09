@@ -6,4 +6,4 @@ Vele da bi njihove sigurnosne mjere trebale spriječiti slanje takvih podataka i
 
 Sigurnosni tim je prikupio Sysmon log računala za koje se smatra da je krivo za ovaj incident i zadužio Vas da ga analizirate.
 
-Ovdje možeš preuzeti Sysmon log: 
+Ovdje možeš preuzeti Sysmon log: [log.zip](https://github.com/fnovak22/ctf-zavrsni/blob/main/Zadaci/Forenzika/Bankovni%20incident/Datoteke/log.zip)
