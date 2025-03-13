@@ -2,8 +2,8 @@
 Preuzimanjem zip datoteke i njezinim raspakiravanjem dobi se direktorij ```pjesme``` koji sadrži razne datoteke čiji nazivi predstavljaju pjesme izvođača NCS (No Copyright Sound).
 
 ```
-└─$ tree
-.
+└─$ tree DJ_usb 
+DJ_usb
 └── pjesme
     ├── Alan Walker - Fade
     ├── Cartoon, Jéja - On & On
