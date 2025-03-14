@@ -54,7 +54,22 @@ Use the "--show" option to display all of the cracked passwords reliably
 Session completed. 
 ```
 
-Provijena lozinka zip arhive je ```@A5!b```.
+Probijena lozinka zip arhive je ```@A5!b```. 
+
+Zip arhiva se može raspakirati na ovaj način, no on je nesiguran jer je lozinka vidljiva u povijesti korištenja terminala:
+
+```
+unzip -P '@A5!b' disk.zip
+```
+
+Preporuča se koristiti unzip bez parametra sa lozinkom. Tada unzip jednostavno traži da se naknadno unese lozinka (ona se ne sprema u povijest terminala).
+
+```
+unzip -P  disk.zip
+```
+
+Raspakiravanjem zip arhive, dobije se jedna slika ```shema.png``` koja izgleda ovako:
 
 
+![shema](https://github.com/user-attachments/assets/5b2857f3-32f0-4a6c-b365-8e59a7d74149)
 
