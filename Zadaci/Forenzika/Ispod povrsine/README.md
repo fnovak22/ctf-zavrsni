@@ -5,4 +5,5 @@ Na disku se nalazi jedna zip datoteka, ali on je zaključan lozinkom. On bi moga
 
 Dodatnom istragom i ispitivanjem, pretpostavlja se da lozinka zip datoteke sadrži 5 znakova.
 
-Ovdje možeš preuzeti sadržaj arhitektovog tvrdog diska: [disk.zip](https://github.com/fnovak22/ctf-zavrsni/blob/main/Zadaci/Forenzika/Ispod%20povrsine/Datoteke/disk.zip)
+Ovdje možeš preuzeti sadržaj arhitektovog tvrdog diska: [disk.zip](https://github.com/fnovak22/ctf-zavrsni/raw/refs/heads/main/Zadaci/Forenzika/Ispod%20povrsine/Datoteke/disk.zip)
+
