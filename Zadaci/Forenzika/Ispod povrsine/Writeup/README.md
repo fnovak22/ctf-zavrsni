@@ -81,5 +81,8 @@ Stavljanjem jedne točke na krivulju osvijetljenosti i njenim pozicioniranjem pr
 
 ![slika](https://github.com/user-attachments/assets/3d95f4fb-398f-4f55-9cc7-5d93d7cdd496)
 
+Poruka je skrivena na način da se na bijelu pozadinu koja ima heksadekatsku vrijednost boje ```FFFFFF```, stavio tekst koji ima heksadekatsku vrijednost boje ```FEFFFF```.
+Razlika između ove dvije boje nije vidljiva bez kontrole prikaza slike.
+
 Skrivena poruka je flag ```CTFFOI[R3V34L1NG_TR4C3S]```.
 
