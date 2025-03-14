@@ -43,7 +43,7 @@ eEYxbHRyYXRpMG5f.bestpracticesbanking.com
 YXR0NGNrS19d.bestpracticesbanking.com
 ```
 
-Poddomene izgledaju kao poruka enkodirana pomoću Base64 formata. Spajanjem pododmena dobi se ```Q1RGRk9JW0ROU19leEYxbHRyYXRpMG5fYXR0NGNrS19d```.
+Poddomene izgledaju kao poruka enkodirana pomoću Base64 formata. Spajanjem poddomena dobi se ```Q1RGRk9JW0ROU19leEYxbHRyYXRpMG5fYXR0NGNrS19d```.
 Poruka se može najjednostavnije dekodirati pomoću nekog online alata.
 
 Dekodirana poruka je flag ```CTFFOI[DNS_exF1ltrati0n_att4ckK_]```.
