@@ -29,3 +29,6 @@ print(payload)
 io.interactive(); #prebacuje stdin i stdout na standardni ulaz i izlaz, vraća kontrolu korisniku (terminalu)
 
 ```
+
+
+Pokretanjem ove skripte, ispiše se flag ```CTFFOI[1nt3ger_0VERFL0W]```.
