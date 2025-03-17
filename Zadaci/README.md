@@ -13,7 +13,7 @@ Forenzika
 ## Web ranjivosti
 Web ranjivosti
 
-## Binarna eksploatacija
+## [Binarna eksploatacija](https://github.com/fnovak22/ctf-zavrsni/tree/main/Zadaci/Binarna%20eksploatacija)
 Binarna eksploatacija
 
 ## Reverzno inženjerstvo
