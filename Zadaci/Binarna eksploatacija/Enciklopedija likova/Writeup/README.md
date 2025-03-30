@@ -8,13 +8,13 @@ Detaljnom analizom izvornog koda programa, uočena je potencijalna ranjivost pro
 
 ```
 printf("Novi opis (ostavi prazno za ostavljanje starog):\n");
-	char privOpis[500];
-	strcpy(privOpis, likovi[index]->opis);
-	fgets(likovi[index]->opis, 600, stdin);
-	likovi[index]->opis[strcspn(likovi[index]->opis, "\n")] = '\0';
-	if(strlen(likovi[index]->opis) == 0){
-		strcpy(likovi[index]->opis, privOpis);	
-	}
+char privOpis[500];
+strcpy(privOpis, likovi[index]->opis);
+fgets(likovi[index]->opis, 600, stdin);
+likovi[index]->opis[strcspn(likovi[index]->opis, "\n")] = '\0';
+if(strlen(likovi[index]->opis) == 0){
+	strcpy(likovi[index]->opis, privOpis);	
+}
 ```
 
 U programu je za opis pojedinog lika rezervirano polje od 500 bajtova, a pomoću funkcije fgets se na rezervirano polje zapisuje maksimalno 600 bajta.
