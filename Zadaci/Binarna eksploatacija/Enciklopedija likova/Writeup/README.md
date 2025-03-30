@@ -193,3 +193,5 @@ print(payload2)
 io.interactive()
 
 ```
+
+Pokretanjem ove skripte, ispiše se flag ```CTFFOI[H3AP_c0ntr0l1ng_G0T]```
