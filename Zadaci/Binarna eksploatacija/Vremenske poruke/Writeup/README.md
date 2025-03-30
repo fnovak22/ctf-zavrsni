@@ -46,7 +46,7 @@ Prvo treba pogledati na kojoj adresi se nalazi buffer:
 ```
 
 Adresa gdje se nalazi naš buffer je ```0x7fffffffddac```.
-Veličina buffera je ```0x2c```  (decimalno je to 44).
+Broj bajtova koje zapisujemo je ```0x2c```  (decimalno je to 44).
 
 Zatim treba pogledati gdje se na stogu nalazi povratna adresa funkcije promijeniZonu:
 ```
