@@ -117,14 +117,66 @@ with open(input_file_path, 'r') as file:
 Pokretanjem ove skripte se generirala slika koja je zamijenila znak ```0``` sa bijelim pikelom, znak ```1``` sa crnim pikselom i znak ```?``` sa crvenim pikselom. 
 Slika izgleda ovako:
 
-[SLIKA]
+<p align="center">
+ <a href="https://github.com/user-attachments/assets/4da87226-a627-46cd-8742-77c83413d921?raw=true" target="_blank">
+  <img src="https://github.com/user-attachments/assets/4da87226-a627-46cd-8742-77c83413d921" width="400"/>
+  <a/>
+<p/>
+
 
 Ovo izgleda kao dio QR koda, ali on se ne može skenirati.
 Pregledom pravila o formatiranju QR koda, mogu se napraviti popravci QR koda koji mogu dovesti do mogućnosti njegova skeniranja.
 
 Prvo se dodaju _Finder patterns_:
+<p align="center">
+ <a href="https://github.com/user-attachments/assets/cfbcd6d5-04ca-44d3-8a89-f190a220a85d?raw=true" target="_blank">
+  <img src="https://github.com/user-attachments/assets/cfbcd6d5-04ca-44d3-8a89-f190a220a85d" width="400"/>
+  <a/>
+<p/>
 
-Zatim se doda _Timing patterns_:
+
+Zatim se dodaju _Timing patterns_:
 
 
-Ovo je finalni QR kod. Kad se on skenira, dobi se flag: ```CTFFOI[QR_C0DEs_4r3_fun]"```.
+<p align="center">
+ <a href="https://github.com/user-attachments/assets/37321bbb-8bca-4ac0-9723-b08d29d7f7bb?raw=true" target="_blank">
+  <img src="https://github.com/user-attachments/assets/37321bbb-8bca-4ac0-9723-b08d29d7f7bb" width="400"/>
+  <a/>
+<p/>
+
+Zatim se doda _Aligment pattern_:
+
+<p align="center">
+ <a href="https://github.com/user-attachments/assets/cbed5fab-0402-4443-8ab1-de8e2f5229cc?raw=true" target="_blank">
+  <img src="https://github.com/user-attachments/assets/cbed5fab-0402-4443-8ab1-de8e2f5229cc" width="400"/>
+  <a/>
+<p/>
+
+
+
+Zatim se doda _Quiet zone_:
+
+<p align="center">
+ <a href="https://github.com/user-attachments/assets/9166564a-ff2a-4e64-8a76-4312de4c146a?raw=true" target="_blank">
+  <img src="https://github.com/user-attachments/assets/9166564a-ff2a-4e64-8a76-4312de4c146a" width="400"/>
+  <a/>
+<p/>
+
+
+Nakon dodavanja stvari koje su stalno iste, kod se još uvijen ne može skenirati. 
+Preostaje nam pogađanje dijela QR koda.
+S lijeve strane gdje se nalaze dva crvena piksela je područje _Error correction_-a.
+S obzirom na to da su samo dva pikesla i svaki od njih može biti bijeli ili crni, postoji samo 4 mogućnosti koje se mogu ručno isprobati.
+Kada se gornji crveni piksel poboja u bijelu boju i donji piksel poboja u crnu boju, QR kod se može skenirati:
+
+<p align="center">
+ <a href="https://github.com/user-attachments/assets/9bc2c023-ff7b-433a-8f0e-196de348930a?raw=true" target="_blank">
+  <img src="https://github.com/user-attachments/assets/9bc2c023-ff7b-433a-8f0e-196de348930a" width="400"/>
+  <a/>
+<p/>
+
+
+
+
+
+Kad se on skenira, dobi se flag: ```CTFFOI[QR_C0DEs_4r3_fun]"```.
