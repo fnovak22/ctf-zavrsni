@@ -52,4 +52,4 @@ m = int_to_text(m)
 print(m)
 ```
 
-Dešifrirana poruka je flag: ```CTFFOI[G3t_B1gg3R_Pr1mes]```
+Dešifrirana poruka je flag: ```CTFFOI[G3t_B1gg3R_Pr1mes]```.
