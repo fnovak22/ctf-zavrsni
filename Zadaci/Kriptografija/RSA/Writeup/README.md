@@ -15,11 +15,11 @@ Značenje pojedine vrijednosti:
  - ```e``` je privatni eksponent
 
 Privatni ključ kod RSA tvore ```p``` i ```q```. 
-To bi trebala biti dva jako velika prosta broja.
+To bi trebala biti dva jako velika prosta broja kako se ```N``` nebi mogao lako rastaviti na proste faktore (faktorizirati).
 Javni ključ ```N``` je jednak umnošku ```p``` i ```q```.
 
 Pregledom dane vrijednosti ```N```, može se zaključiti da je ona vrlo mala.
-Radi toga, može se probati rastaviti na proste faktore (faktorizirati).
+Radi toga, može se probati faktorizirati.
 Često korišten alat za faktorizaciju velikih brojeva je [FactorDB](https://factordb.com).
 To je internetska baza podataka koja pohranjuje faktorizacije velikih brojeva i omogućuje automatsko traženje njihovih prostih faktora.
 
