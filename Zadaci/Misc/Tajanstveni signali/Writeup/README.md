@@ -179,4 +179,4 @@ Kada se gornji crveni piksel poboja u bijelu boju i donji piksel poboja u crnu b
 
 
 
-Kad se on skenira, dobi se flag: ```CTFFOI[QR_C0DEs_4r3_fun]"```.
+Kad se on skenira, dobi se flag: ```CTFFOI[QR_C0DEs_4r3_fun]```.
