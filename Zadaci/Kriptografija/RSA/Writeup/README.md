@@ -49,9 +49,7 @@ def int_to_text(number):
     return number.to_bytes(byte_length, byteorder='big').decode('utf-8')
     
 m = int_to_text(m)
-
 print(m)
-
 ```
 
 Dešifrirana poruka je flag: ```CTFFOI[G3t_B1gg3R_Pr1mes]```
