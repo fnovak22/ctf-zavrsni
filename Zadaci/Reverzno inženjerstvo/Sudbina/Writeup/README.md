@@ -120,3 +120,5 @@ No vidimo da on zapravo ne sadrži provjeru koja je uvijek istinita pa je stavio
 
 
 U dek
+
+TODO
