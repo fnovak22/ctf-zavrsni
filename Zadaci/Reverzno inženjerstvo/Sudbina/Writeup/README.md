@@ -93,6 +93,20 @@ jmp     short loc_1400012A4
 
 Izgleda da ovaj blok ispisuje flag.
 
+<p align="center">
+ <a href="https://github.com/user-attachments/assets/d8ee40b3-7421-419b-b4f4-9691bb3ac464?raw=true" target="_blank">
+  <img src="https://github.com/user-attachments/assets/d8ee40b3-7421-419b-b4f4-9691bb3ac464"/>
+  <a/>
+<p/>
+
+
+I nakon toga slijedi ovo:
+
+![slika](https://github.com/user-attachments/assets/ecebe1a1-a5ca-4919-a029-e5fe2be7c981)
+
+
+
+
 
 Također, možemo probati i dekompajlirati kod:
 
