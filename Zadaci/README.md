@@ -37,7 +37,9 @@ Popis zadataka:
 ## [Reverzno inženjerstvo](https://github.com/fnovak22/ctf-zavrsni/tree/main/Zadaci/Reverzno%20in%C5%BEenjerstvo)
 (Opis Reverzno inženjerstvo)
 
-Zadaci: [Reverzno inženjerstvo](https://github.com/fnovak22/ctf-zavrsni/tree/main/Zadaci/Reverzno%20in%C5%BEenjerstvo)
+Popis zadataka:
+- [Sudbina](https://github.com/fnovak22/ctf-zavrsni/tree/main/Zadaci/Reverzno%20in%C5%BEenjerstvo/Sudbina)
+
 
 ## [Razno](https://github.com/fnovak22/ctf-zavrsni/tree/main/Zadaci/Misc)
 (Opis Razno)
