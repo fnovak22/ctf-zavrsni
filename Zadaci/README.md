@@ -20,6 +20,11 @@ Zadaci: [Forenzika](https://github.com/fnovak22/ctf-zavrsni/tree/main/Zadaci/For
 
 Zadaci: [Binarna eksploatacija](https://github.com/fnovak22/ctf-zavrsni/tree/main/Zadaci/Binarna%20eksploatacija)
 
+## [Kriptografija](https://github.com/fnovak22/ctf-zavrsni/tree/main/Zadaci/Kriptografija)
+(Opis Kriptografija)
+
+Zadaci: [Kriptografija](https://github.com/fnovak22/ctf-zavrsni/tree/main/Zadaci/Kriptografija)
+
 ## [Reverzno inženjerstvo](https://github.com/fnovak22/ctf-zavrsni/tree/main/Zadaci/Reverzno%20in%C5%BEenjerstvo)
 (Opis Reverzno inženjerstvo)
 
