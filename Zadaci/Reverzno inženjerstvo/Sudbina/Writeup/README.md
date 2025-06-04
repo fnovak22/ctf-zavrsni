@@ -102,9 +102,11 @@ Izgleda da ovaj blok ispisuje flag.
 
 I nakon toga slijedi ovo:
 
-![slika](https://github.com/user-attachments/assets/ecebe1a1-a5ca-4919-a029-e5fe2be7c981)
-
-
+<p align="center">
+ <a href="https://github.com/user-attachments/assets/ecebe1a1-a5ca-4919-a029-e5fe2be7c981?raw=true" target="_blank">
+  <img src="https://github.com/user-attachments/assets/ecebe1a1-a5ca-4919-a029-e5fe2be7c981"/>
+  <a/>
+<p/>
 
 
 
@@ -112,13 +114,46 @@ Također, možemo probati i dekompajlirati kod:
 
 ![slika](https://github.com/user-attachments/assets/6a0b601f-6685-4c32-b96a-6fc0a85206fa)
 
-No vidimo da on zapravo ne sadrži provjeru koja je uvijek istinita pa je stavio samo if(true).
+No vidimo da on zapravo ne sadrži provjeru koja je uvijek istinita pa je dekompajler stavio samo izraz ```if(true)```.
 
 
 
 
 
+Da bismo prevarili program i natjerali ga da se grana u drugom smjeru (da ne izvrši prvi skok), možemo modificirati binarni kod izvršne datoteke.
+U IDA to možemo učiniti na slijedeći način: 
+ 1. Pritisnuti (označiti) liniju ```cmp eax, 64h ; 'd'```
+ 2. Edit --> Patch Program --> Assemble
+ 4. Zamijeniti operand 64h sa operandom 5
+ 5. Pritusnuti OK
 
-U dek
+<p align="center">
+ <a href="https://github.com/user-attachments/assets/5224708c-3a8e-4ee0-a646-ec6e28267266?raw=true" target="_blank">
+  <img src="https://github.com/user-attachments/assets/5224708c-3a8e-4ee0-a646-ec6e28267266"/>
+  <a/>
+<p/>
 
-TODO
+ 6. Edit --> Patch Program --> Apply patches to input file
+
+<p align="center">
+ <a href="https://github.com/user-attachments/assets/885da1b9-8d0a-4c49-a7df-bdf2fe444f78?raw=true" target="_blank">
+  <img src="https://github.com/user-attachments/assets/885da1b9-8d0a-4c49-a7df-bdf2fe444f78"/>
+  <a/>
+<p/>
+
+ 7. Preporuča se označiti _Create backup_
+ 8. Pritusnuti OK
+
+
+Sada sam se uredio binarni kod u Console.exe koji smo analizirali u IDA.
+Prilikom ponovog pokretanja Console.exe, ispisuje se flag:
+
+<p align="center">
+ <a href="https://github.com/user-attachments/assets/cb829290-c479-4f02-87d5-de1ac7339790?raw=true" target="_blank">
+  <img src="https://github.com/user-attachments/assets/cb829290-c479-4f02-87d5-de1ac7339790"/>
+  <a/>
+<p/>
+
+Flag je ```CTFFOI[lY1ng_t0_PR0gr4ms45]```.
+
+Napomena: Mogao se i pokušati shvatiti način ispis flag-a u metodi revealFlag(), no to bi zahtjevalo više vremena.
