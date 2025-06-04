@@ -27,7 +27,7 @@ Prvo se otvara funkcija main:
 
 Ovaj prikaz prikazuje tok rada programa u obliku instrukcija.
 Program započinje u najgornjem bloku.
-Na početku se rezerrvira memoristi prostor za varijable ```a``` i ```randomNum``` na stogu:
+Na početku se rezervira memoristi prostor za varijable ```a``` i ```randomNum``` na stogu:
 
 ```
 a= dword ptr -18h
