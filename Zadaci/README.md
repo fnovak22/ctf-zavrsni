@@ -22,7 +22,11 @@ Popis zadataka:
 ## [Binarna eksploatacija](https://github.com/fnovak22/ctf-zavrsni/tree/main/Zadaci/Binarna%20eksploatacija)
 (Opis Binarna eksploatacija)
 
-Zadaci: [Binarna eksploatacija](https://github.com/fnovak22/ctf-zavrsni/tree/main/Zadaci/Binarna%20eksploatacija)
+Popis zadataka:
+- [Kupovina](https://github.com/fnovak22/ctf-zavrsni/tree/main/Zadaci/Binarna%20eksploatacija/Kupovina)
+- [Vremenske poruke](https://github.com/fnovak22/ctf-zavrsni/tree/main/Zadaci/Binarna%20eksploatacija/Vremenske%20poruke)
+- [Enciklopedija likova](https://github.com/fnovak22/ctf-zavrsni/tree/main/Zadaci/Binarna%20eksploatacija/Enciklopedija%20likova)
+
 
 ## [Kriptografija](https://github.com/fnovak22/ctf-zavrsni/tree/main/Zadaci/Kriptografija)
 (Opis Kriptografija)
