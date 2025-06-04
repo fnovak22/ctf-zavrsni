@@ -145,7 +145,7 @@ U IDA to možemo učiniti na slijedeći način:
  8. Pritusnuti OK
 
 
-Sada sam se uredio binarni kod u Console.exe koji smo analizirali u IDA.
+Sada sam se uredio binarni kod u Console.exe koji smo analizirali u IDA. Zapravo se moglo urediti i početno postavljanje vrijednosti 64h umjesto 5 ili se moglo zamijeniti instrukciju jnz sa jmp - dobio bi se isti rezultat.
 Prilikom ponovog pokretanja Console.exe, ispisuje se flag:
 
 <p align="center">
@@ -156,4 +156,4 @@ Prilikom ponovog pokretanja Console.exe, ispisuje se flag:
 
 Flag je ```CTFFOI[lY1ng_t0_PR0gr4ms45]```.
 
-Napomena: Mogao se i pokušati shvatiti način ispis flag-a u metodi revealFlag(), no to bi zahtjevalo više vremena.
+_Napomena: Mogao se pokušati shvatiti način ispisa flag-a u metodi revealFlag(), no to bi zahtjevalo više vremena._
