@@ -10,7 +10,11 @@ Primjer flaga: ```CTFFOI[pr1mjer_fl4g4]```
 ## [Forenzika](https://github.com/fnovak22/ctf-zavrsni/tree/main/Zadaci/Forenzika)
 (Opis Forenzika)
 
-Zadaci: [Forenzika](https://github.com/fnovak22/ctf-zavrsni/tree/main/Zadaci/Forenzika)
+Popis zadataka:
+- [DJ](https://github.com/fnovak22/ctf-zavrsni/tree/main/Zadaci/Forenzika/DJ)
+- [Ispod povrsine](https://github.com/fnovak22/ctf-zavrsni/tree/main/Zadaci/Forenzika/Ispod%20povrsine)
+- [Bankovni incident](https://github.com/fnovak22/ctf-zavrsni/tree/main/Zadaci/Forenzika/Bankovni%20incident)
+
 
 ## Web ranjivosti
 (Opis Web ranjivosti)
