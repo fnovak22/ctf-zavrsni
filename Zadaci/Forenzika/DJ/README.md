@@ -4,3 +4,7 @@ MUP-ova služba kibernetičke sigurnosti je uhitila poznatog DJ-a koji je osumnj
 Možeš li pomoći MUP-u u analizi ovih pjesama?
 
 Ovdje možeš preuzeti sadržaj DJ-ovog USB sticka: [DJ_usb.zip](https://github.com/fnovak22/ctf-zavrsni/raw/refs/heads/main/Zadaci/Forenzika/DJ/Datoteke/DJ_usb.zip)
+
+---
+
+Rješenje: [Writeup](https://github.com/fnovak22/ctf-zavrsni/tree/main/Zadaci/Forenzika/DJ/Writeup)
