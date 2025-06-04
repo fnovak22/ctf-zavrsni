@@ -31,7 +31,8 @@ Popis zadataka:
 ## [Kriptografija](https://github.com/fnovak22/ctf-zavrsni/tree/main/Zadaci/Kriptografija)
 (Opis Kriptografija)
 
-Zadaci: [Kriptografija](https://github.com/fnovak22/ctf-zavrsni/tree/main/Zadaci/Kriptografija)
+Popis zadataka:
+- [RSA](https://github.com/fnovak22/ctf-zavrsni/tree/main/Zadaci/Kriptografija/RSA)
 
 ## [Reverzno inženjerstvo](https://github.com/fnovak22/ctf-zavrsni/tree/main/Zadaci/Reverzno%20in%C5%BEenjerstvo)
 (Opis Reverzno inženjerstvo)
