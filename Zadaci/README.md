@@ -44,6 +44,7 @@ Popis zadataka:
 ## [Razno](https://github.com/fnovak22/ctf-zavrsni/tree/main/Zadaci/Misc)
 (Opis Razno)
 
-Zadaci: [Razno](https://github.com/fnovak22/ctf-zavrsni/tree/main/Zadaci/Misc)
+Popis zadataka:
+- [Tajanstveni signali](https://github.com/fnovak22/ctf-zavrsni/tree/main/Zadaci/Misc/Tajanstveni%20signali)
 
 
