@@ -16,7 +16,7 @@ Primjer flaga: ```CTFFOI[pr1mjer_fl4g4]```
 ## [Binarna eksploatacija](https://github.com/fnovak22/ctf-zavrsni/tree/main/Zadaci/Binarna%20eksploatacija)
 (Opis Binarna eksploatacija)
 
-## Reverzno inženjerstvo
+## [Reverzno inženjerstvo](https://github.com/fnovak22/ctf-zavrsni/tree/main/Zadaci/Reverzno%20in%C5%BEenjerstvo)
 (Opis Reverzno inženjerstvo)
 
 ## Razno
