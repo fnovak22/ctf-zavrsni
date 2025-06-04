@@ -19,7 +19,7 @@ Primjer flaga: ```CTFFOI[pr1mjer_fl4g4]```
 ## [Reverzno inženjerstvo](https://github.com/fnovak22/ctf-zavrsni/tree/main/Zadaci/Reverzno%20in%C5%BEenjerstvo)
 (Opis Reverzno inženjerstvo)
 
-## Razno
+## [Razno](https://github.com/fnovak22/ctf-zavrsni/tree/main/Zadaci/Misc)
 (Opis Razno)
 
 
