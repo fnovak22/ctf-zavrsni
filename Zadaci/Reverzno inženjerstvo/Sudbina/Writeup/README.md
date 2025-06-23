@@ -2,7 +2,6 @@
 
 Unutar preuzete zip arhive se nalazi izvršni program ```ConsoleApp.exe```.
 On se može jednostavno pokrenuti. Postoje dva moguća izlaza:
-![slika]()
 
 <p align="center">
  <a href="https://github.com/user-attachments/assets/16253f2f-f16f-4bf0-9317-73b181f66c41?raw=true" target="_blank">
