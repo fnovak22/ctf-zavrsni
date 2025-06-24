@@ -94,7 +94,7 @@ CryptoPP::SimpleKeyingInterface::SetKeyWithIV((SimpleKeyingInterface *)local_1f8
 
 Dokumentacija: https://cryptopp.com/docs/ref/class_simple_keying_interface.html#a5b4e358c514fd743840967bc595a34c2
 
-Ostatak koda samo šifrira izvorni sadržaj datoteke ```flag.txt```, zapisuje ga u kriptiranu datoteku ```flag.enc``` i briše datoteku ```flag.txt```. Sada se ima dovoljno informacija o radu ovog ransomware-a i može se probati napraviti skripta za dekriptiranje ```flag.enc```. 
+Ostatak koda samo šifrira izvorni sadržaj datoteke ```flag.txt```, zapisuje ga u kriptiranu datoteku ```flag.enc``` i briše datoteku ```flag.txt```. Sada se ima dovoljno informacija o radu ovog ransomware-a i može se pokušati napraviti skripta za dekriptiranje ```flag.enc```. 
 
 Izrađena python skripta za dešifriranje:
 ```
