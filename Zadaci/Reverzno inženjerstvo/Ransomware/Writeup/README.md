@@ -81,5 +81,17 @@ DES je simetrični algoritam pifriranja koji koristi blokove. On koristi 8 bajto
 Kod CBC načina rada, svaki blok ovisi o prethodnom bloku. Samo prvi blok ovisi o IV-u (on se XOR-a s IV-em).
 
 
+Slijedeći dio objektu šifriranja ```local_1f8``` dodjeljuje ključ i IV.
+
+```
+CryptoPP::SimpleKeyingInterface::SetKeyWithIV((SimpleKeyingInterface *)local_1f8, local_a8 + 8, 8, local_a8);
+```
+
+ - ```local_a8 + 8``` je druga polovica polja koja sadrži ključ
+ - ```8``` je duljina ključa u bajtovima
+ - ```local_a8``` pokazuje na početak polja gdje se nalazi IV
 
 
+Dokumentacija: https://cryptopp.com/docs/ref/class_simple_keying_interface.html#a5b4e358c514fd743840967bc595a34c2
+
+Ostatak koda samo šifrira izvorni sadržaj datoteke i zapisuje ga u kriptiranu datoteku. Sada se ima dovoljno informacija o radu ovog ransomware-a i može se probati napraviti skripta za dekriptiranje ```flag.enc```.
