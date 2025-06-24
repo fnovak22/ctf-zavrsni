@@ -11,22 +11,19 @@ rans.exe: ELF 64-bit LSB executable, x86-64, version 1 (GNU/Linux), statically l
 
 To je standardni format za izvršne datoteke na Linux-u i sličnim Unix operativnim sustavima, tj. pokreće se na Linuxu.
 
-
-
 Može se probati dekompajlirati ```rans.exe``` pomoću alata Ghidra.
 
 <p align="center">
- <a href="https://github.com/user-attachments/assets/fbe7b4b1-fca3-46bb-a61c-1f53a74a2b8a?raw=true" target="_blank">
-  <img src="https://github.com/user-attachments/assets/fbe7b4b1-fca3-46bb-a61c-1f53a74a2b8a"/>
+ <a href="https://github.com/user-attachments/assets/c58d74d6-9a28-4bc9-9740-cc070e3ba509?raw=true" target="_blank">
+  <img src="https://github.com/user-attachments/assets/c58d74d6-9a28-4bc9-9740-cc070e3ba509"/>
   <a/>
 <p/>
 
 <p align="center">
- <a href="https://github.com/user-attachments/assets/f4fd1cdf-ec6b-4e2c-90f3-40a4cb59ef0f?raw=true" target="_blank">
-  <img src="https://github.com/user-attachments/assets/f4fd1cdf-ec6b-4e2c-90f3-40a4cb59ef0f"/>
+ <a href="https://github.com/user-attachments/assets/cd0d8b9d-4f93-4fb0-9ec8-08af63476ab4?raw=true" target="_blank">
+  <img src="https://github.com/user-attachments/assets/cd0d8b9d-4f93-4fb0-9ec8-08af63476ab4"/>
   <a/>
 <p/>
-
 
 Na početku main funkcije se deklaliraju lokalne varijabgle na stacku (do 22. linije).
 
@@ -35,27 +32,54 @@ Zatim se inicijaliziraju dva stringa: ```flag.txt``` i ```flag.en```. Oni vjeroj
 Slijedeći dio izgledao kao ključ za šifriranje:
 
 ```
-local_40 = "K3Ph.t6sd!Ua$#Ca";
+local_30 = "K3Ph.t6sd!Ua$#Ca";
 ```
 
 Nakon toga se ponovo polavljuje polovica toga ključa što je malo sumnjivo:
 ```
-  local_b8[8] = 'K';
-  local_b8[9] = '3';
-  local_b8[10] = 'P';
-  local_b8[0xb] = 'h';
-  local_b8[0xc] = '.';
-  local_b8[0xd] = 't';
-  local_b8[0xe] = '6';
-  local_b8[0xf] = 's';
-  local_b8[0] = '\x1c';
-  local_b8[1] = '1';
-  local_b8[2] = 0xe1;
-  local_b8[3] = 'x';
-  local_b8[4] = 0x9a;
-  local_b8[5] = 'K';
-  local_b8[6] = '=';
-  local_b8[7] = 0xef;
+local_a8[8] = 'K';
+local_a8[9] = '3';
+local_a8[10] = 'P';
+local_a8[0xb] = 'h';
+local_a8[0xc] = '.';
+local_a8[0xd] = 't';
+local_a8[0xe] = '6';
+local_a8[0xf] = 's';
+local_a8[0] = '\x1c';
+local_a8[1] = '1';
+local_a8[2] = 0xe1;
+local_a8[3] = 'x';
+local_a8[4] = 0x9a;
+local_a8[5] = 'K';
+local_a8[6] = '=';
+local_a8[7] = 0xef;
 ```
 
-Izgleda da se ovdje na početku polja ```local_b8``` postavlja hardkodirani IV i na drugoj polovici hardkodirani dio ključa.
+Izgleda da se ovdje na početku polja ```local_a8``` postavlja hardkodirani IV i na drugoj polovici hardkodirani dio ključa.
+
+Zatim se pretpostavlja da se čita sadržaj datoteke ```flag.txt``` i priprema se izlazni vektor:
+```
+readFile(local_c8);
+std::vector<>::vector(local_e8);
+```
+
+Nakon toga slijedi kreiranje objekta za šifriranje:
+```
+CryptoPP::CipherModeFinalTemplate_CipherHolder<>::CipherModeFinalTemplate_CipherHolder(local_1f8);
+```
+
+Ovdje se ne vidi koji se algoritam točno koristio za šifriranje. Da bi se to saznalo, može se duplo pritisnuti na ```CipherModeFinalTemplate_CipherHolder```:
+
+<p align="center">
+ <a href="https://github.com/user-attachments/assets/051d66a7-5f1f-4998-9e99-d02078fe1556?raw=true" target="_blank">
+  <img src="https://github.com/user-attachments/assets/051d66a7-5f1f-4998-9e99-d02078fe1556"/>
+  <a/>
+<p/>
+
+Vidi se da je dekompajler shvatio da se radi o DES algoritmu šifriranja u načinu rada CBC.
+DES je simetrični algoritam pifriranja koji koristi blokove. On koristi 8 bajtova za ključ i 8 bajtova za IV (inicijalizacijski vektor).
+Kod CBC načina rada, svaki blok ovisi o prethodnom bloku. Samo prvi blok ovisi o IV-u (on se XOR-a s IV-em).
+
+
+
+
