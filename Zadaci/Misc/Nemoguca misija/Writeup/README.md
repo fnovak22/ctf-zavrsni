@@ -65,6 +65,9 @@ exec(f"{ime_varijable}={vrijednost_varijable}")
 
 Kao korisnički ulaz vrijednosti varijable može se unijeti: ```a=123```.
 Tako funkcija ```exec``` zapravo izvrši slijedeću naredbu: ```b=a=123```.
+Ovim načinom obje varijable poprime istu vrijednost.
+
+Može se preurediti prva _bruteforce_ skripta tako da provjerava sve moguće zajedničke vrijednosti korisničke varijable i varijable ```a```.
 
 ```
 import subprocess
@@ -80,7 +83,7 @@ def rjesiMisiju(prvi_input,drugi_input):
     output = rezultat.stdout.strip()
     return output
 
-for broj in range(100000):
+for broj in range(1000):
     output = rjesiMisiju("b",str(broj))
     print(f"Ulaz: {str(broj)} --> Izlaz: {output}")
     if "ERROR" not in output:
@@ -93,3 +96,4 @@ else:
 
 
 Prvi broj koji je uspio rjesiti misiju je ```823```.
+S korisničkim unosom ```b``` i ```a=823``` ispiše se flag: ```CTFFOI[3vAls_4nD_Ex3cs]```.
