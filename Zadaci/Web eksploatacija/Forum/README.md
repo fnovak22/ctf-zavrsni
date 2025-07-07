@@ -1,5 +1,5 @@
 # Enciklopedija likova
-Marija razvija novu web aplikaciju za Forum. Pomozi mu provjeriti ako je njegova web aplikacija sigurna (pokušaj se prijaviti kao administrator).
+Marija razvija novu web aplikaciju za Forum. Pomozi joj provjeriti ako je njegova web aplikacija sigurna (pokušaj se prijaviti kao administrator).
 
 Ovdje možete preuzeti docker : [Forum.zip](https://github.com/fnovak22/ctf-zavrsni/raw/refs/heads/main/Zadaci/Web%20eksploatacija/Forum/Datoteke/Forum.zip)
 
