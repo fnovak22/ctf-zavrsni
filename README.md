@@ -19,8 +19,11 @@ Popis zadataka:
 - [Bankovni incident](https://github.com/fnovak22/ctf-zavrsni/tree/main/Zadaci/Forenzika/Bankovni%20incident)
 
 
-## Web ranjivosti
-(Opis Web ranjivosti)
+## Web eksploatacija
+(Opis Web eksploatacija)
+
+Popis zadataka:
+- [Forum](https://github.com/fnovak22/ctf-zavrsni/tree/main/Zadaci/Web%20/Forum)
 
 ## [Binarna eksploatacija](https://github.com/fnovak22/ctf-zavrsni/tree/main/Zadaci/Binarna%20eksploatacija)
 (Opis Binarna eksploatacija)
