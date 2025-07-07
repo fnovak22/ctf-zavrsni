@@ -8,7 +8,7 @@ Pokretanje:
 docker-compose up --build
 ```
 
-_**Napomena**: zabranjeno je čitanje izvornog koda web aplikacije_
+_**Napomena**: zabranjeno je izravno čitanje izvornog koda i sadržaja datoteka_
 
 ---
 
