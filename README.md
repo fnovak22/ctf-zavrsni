@@ -10,7 +10,7 @@ Primjer flaga: ```CTFFOI[pr1mjer_fl4g4]```
 
 # Kategorije
 
-## [Forenzika](https://github.com/fnovak22/ctf-zavrsni/tree/main/Zadaci/Forenzika)
+## Forenzika
 (Opis Forenzika)
 
 Popis zadataka:
@@ -19,13 +19,13 @@ Popis zadataka:
 - [Bankovni incident](https://github.com/fnovak22/ctf-zavrsni/tree/main/Zadaci/Forenzika/Bankovni%20incident)
 
 
-## [Web eksploatacija](https://github.com/fnovak22/ctf-zavrsni/tree/main/Zadaci/Web%20eksploatacija)
+## Web eksploatacija
 (Opis Web eksploatacija)
 
 Popis zadataka:
 - [Forum](https://github.com/fnovak22/ctf-zavrsni/tree/main/Zadaci/Web%20/Forum)
 
-## [Binarna eksploatacija](https://github.com/fnovak22/ctf-zavrsni/tree/main/Zadaci/Binarna%20eksploatacija)
+## Binarna eksploatacija
 (Opis Binarna eksploatacija)
 
 Popis zadataka:
@@ -34,13 +34,13 @@ Popis zadataka:
 - [Enciklopedija likova](https://github.com/fnovak22/ctf-zavrsni/tree/main/Zadaci/Binarna%20eksploatacija/Enciklopedija%20likova)
 
 
-## [Kriptografija](https://github.com/fnovak22/ctf-zavrsni/tree/main/Zadaci/Kriptografija)
+## Kriptografija
 (Opis Kriptografija)
 
 Popis zadataka:
 - [RSA](https://github.com/fnovak22/ctf-zavrsni/tree/main/Zadaci/Kriptografija/RSA)
 
-## [Reverzno inženjerstvo](https://github.com/fnovak22/ctf-zavrsni/tree/main/Zadaci/Reverzno%20in%C5%BEenjerstvo)
+## Reverzno inženjerstvo
 (Opis Reverzno inženjerstvo)
 
 Popis zadataka:
@@ -48,7 +48,7 @@ Popis zadataka:
 - [Ransomware](https://github.com/fnovak22/ctf-zavrsni/tree/main/Zadaci/Reverzno%20in%C5%BEenjerstvo/Ransomware)
 
 
-## [Razno](https://github.com/fnovak22/ctf-zavrsni/tree/main/Zadaci/Misc)
+## Razno
 (Opis Razno)
 
 Popis zadataka:
