@@ -1,3 +1,3 @@
 # Web eksploatacija
 Popis zadataka:
-- [Forum](https://github.com/fnovak22/ctf-zavrsni/tree/main/Zadaci/Web%20/Forum)
+- [Forum](https://github.com/fnovak22/ctf-zavrsni/tree/main/Zadaci/Web%20eksploatacija/Forum)
