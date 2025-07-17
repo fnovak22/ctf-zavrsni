@@ -1,4 +1,4 @@
-# Forum
+# Galerija
 Ivan razvija novu web aplikaciju za privatno spremanje slika na oblaku. Pomozi mu provjeriti ako je njegova web aplikacija sigurna.
 Tvoj zadatak je da pregledaš galeriju slika administratora.
 
