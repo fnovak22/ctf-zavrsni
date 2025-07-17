@@ -44,8 +44,8 @@ Može se još pokušati korisnik s ID-em 2.
 Dobila se galerija administratora: 
 
 <p align="center">
- <a href="https://github.com/user-attachments/assets/f1958318-dfa7-43c3-99f7-43438c7d8e31?raw=true" target="_blank">
-  <img src="https://github.com/user-attachments/assets/f1958318-dfa7-43c3-99f7-43438c7d8e31"/>
+ <a href="https://github.com/user-attachments/assets/30fa4e6a-a82c-4238-ae02-249a95b10019?raw=true" target="_blank">
+  <img src="https://github.com/user-attachments/assets/30fa4e6a-a82c-4238-ae02-249a95b10019"/>
   <a/>
 <p/>
 
