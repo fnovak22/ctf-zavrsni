@@ -41,7 +41,7 @@ Pretpostavlja se da je brij na kraju URL-a zapravo ID vlasnika galerije slika. P
 
 Ovdje nažalost nema flag-a.
 Može se još pokušati korisnik s ID-em 2. 
-Tada se dobi galerija administratora: 
+Dobila se galerija administratora: 
 
 <p align="center">
  <a href="https://github.com/user-attachments/assets/f1958318-dfa7-43c3-99f7-43438c7d8e31?raw=true" target="_blank">
