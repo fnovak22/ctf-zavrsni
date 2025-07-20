@@ -18,7 +18,6 @@ Popis zadataka:
 - [Ispod povrsine](https://github.com/fnovak22/ctf-zavrsni/tree/main/Zadaci/Forenzika/Ispod%20povrsine)
 - [Bankovni incident](https://github.com/fnovak22/ctf-zavrsni/tree/main/Zadaci/Forenzika/Bankovni%20incident)
 
-
 ## Web eksploatacija
 (Opis Web eksploatacija)
 
@@ -34,12 +33,12 @@ Popis zadataka:
 - [Vremenske poruke](https://github.com/fnovak22/ctf-zavrsni/tree/main/Zadaci/Binarna%20eksploatacija/Vremenske%20poruke)
 - [Enciklopedija likova](https://github.com/fnovak22/ctf-zavrsni/tree/main/Zadaci/Binarna%20eksploatacija/Enciklopedija%20likova)
 
-
 ## Kriptografija
 (Opis Kriptografija)
 
 Popis zadataka:
 - [RSA](https://github.com/fnovak22/ctf-zavrsni/tree/main/Zadaci/Kriptografija/RSA)
+- [Kriptokoder](https://github.com/fnovak22/ctf-zavrsni/tree/main/Zadaci/Kriptografija/Kriptokoder)
 
 ## Reverzno inženjerstvo
 (Opis Reverzno inženjerstvo)
@@ -48,7 +47,6 @@ Popis zadataka:
 - [Pogodi broj](https://github.com/fnovak22/ctf-zavrsni/tree/main/Zadaci/Reverzno%20in%C5%BEenjerstvo/Pogodi%20broj)
 - [Sudbina](https://github.com/fnovak22/ctf-zavrsni/tree/main/Zadaci/Reverzno%20in%C5%BEenjerstvo/Sudbina)
 - [Ransomware](https://github.com/fnovak22/ctf-zavrsni/tree/main/Zadaci/Reverzno%20in%C5%BEenjerstvo/Ransomware)
-
 
 ## Razno
 (Opis Razno)
