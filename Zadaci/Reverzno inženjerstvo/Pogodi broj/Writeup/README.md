@@ -53,9 +53,6 @@ local_c * local_10 * local_14 = 17455872
 
 Pokušaj unosa toga broja potvrđuje da je ovaj broj točan:
 
-
-<img width="383" height="97" alt="slika" src="" />
-
 <p align="center">
  <a href="https://github.com/user-attachments/assets/b4589395-c057-46cc-82a8-0cce18b0b56e?raw=true" target="_blank">
   <img src="https://github.com/user-attachments/assets/b4589395-c057-46cc-82a8-0cce18b0b56e"/>
