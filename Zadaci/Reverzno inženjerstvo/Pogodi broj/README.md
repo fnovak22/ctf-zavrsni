@@ -1,5 +1,7 @@
 # Pogodi broj
+Matej je izradio program koji traži unos točnog broja. Pokušaj pogoditi točan broj.
 
+Flag je uformati ```CTFFOI[<točan broj>]```.
 
 Ovdje možeš preuzeti program: [pogodi_broj.zip](https://github.com/fnovak22/ctf-zavrsni/raw/refs/heads/main/Zadaci/Reverzno%20in%C5%BEenjerstvo/Pogodi%20broj/Datoteke/pogodi_broj.zip)
 
