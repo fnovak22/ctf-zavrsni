@@ -5,7 +5,7 @@ Pomozi joj izraditi program koji će moći dešifrirati njezine poruke kako bi i
 
 Ema je kriptirala svoju prvu poruku koju trebaš dešifrirati kako bi se potvrdilo dešifriranje.
 
-Ovdje možeš preuzeti datoteke: [kriptokoder.zip](https://github.com/fnovak22/ctf-zavrsni/raw/refs/heads/main/Zadaci/Kriptografija/RSA/Datoteke/kriptokoder.zip)
+Ovdje možeš preuzeti datoteke: [kriptokoder.zip](https://github.com/fnovak22/ctf-zavrsni/raw/refs/heads/main/Zadaci/Kriptografija/Kriptokoder/Datoteke/kriptokoder.zip)
 
 ---
 
