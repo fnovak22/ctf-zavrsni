@@ -96,6 +96,8 @@ Kriptiranje se odvija u tri koraka.
 Prvi korak je rotacija bitova unutar svakog bajta poruke za 3 bita udesno:
 
 ```python
+temp = r(byte)
+...
 def r(b):
     right = b >> 3
     left  = (b & ((1 << 3) - 1)) << 5
@@ -109,13 +111,58 @@ U drugom koraku se radi jednostavan XOR svakog bajta s bajtom ključa (ukoliko j
 temp =  temp ^ key[i % len(key)]
 ```
 
-U zadnjem koraku
+U zadnjem koraku se od gledanog bajta uzima prva i druga polovica bajta. 
+Radi se mapiranje prema vrijednostima polovica bajta. 
+Vrijednosti za mapiranje se uzimaju iz hardkodiranog stringa ```Z```:
 
 ```python
+Z = "![_°^?'I|o0]$+=-"
+...
 h = (temp >> 4) & 0xF 
-        c.append(Z[h])
-        l = temp & 0xF
-        c.append(Z[l])
+c.append(Z[h])
+l = temp & 0xF
+c.append(Z[l])
+```
+
+<hr>
+
+Sada kada je jasno kako radi algoritam za šifriranje može se napraviti algoritam za dešifriranje:
+
+```python
+def shift_inv(b):
+    left  = (b << 3) & 0xFF
+    right = (b >> 5) & 0x07
+    return left | right
+
+def decrypt(cipher, key):
+    Z = "![_°^?'I|o0]$+=-"
+    zmap = {ch: i for i,ch in enumerate(Z)}
+    key_bytes = key.encode("utf-8")
+    key_len = len(key_bytes)
+    m = bytearray()
+    
+    for i in range(0, len(cipher), 2):
+
+        #3. korak
+        h = zmap[cipher[i]]
+        l = zmap[cipher[i+1]]
+        temp = (h << 4) | l
+
+        #2. korak
+        k_byte = key_bytes[(i//2) % key_len]
+        temp2 = temp ^ k_byte
+
+        #1. korak
+        original = shift_inv(temp2)
+        m.append(original)
+
+    return m.decode('utf-8', errors='replace')
+
+c = "[==]0=-+|=!^_0oI°_|$+'I$I-+$0[_oo[$__|o+$+0]?+_+!'^-+^I_|]o_o+"
+key = "vaf5g-AZTFz65th/?.%"
+m = decrypt(c, key)
+print(m)
+
 ```
 
 Flag je: ```CTFFOI[n3VeRREN0ugh_enCRYpt1nG]```.
