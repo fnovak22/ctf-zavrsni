@@ -18,8 +18,8 @@ Popis zadataka:
 - [Ispod povrsine](https://github.com/fnovak22/ctf-zavrsni/tree/main/Zadaci/Forenzika/Ispod%20povrsine)
 - [Bankovni incident](https://github.com/fnovak22/ctf-zavrsni/tree/main/Zadaci/Forenzika/Bankovni%20incident)
 
-## Web eksploatacija
-(Opis Web eksploatacija)
+## Web
+(Opis Web)
 
 Popis zadataka:
 - [Forum](https://github.com/fnovak22/ctf-zavrsni/tree/main/Zadaci/Web%20eksploatacija/Forum)
