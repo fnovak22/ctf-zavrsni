@@ -2,7 +2,7 @@
 
 Trenutno se istražuje novi kriminalistički slučaj.
 Forenzički tim je izvukao razgovor iz javne aplikacije za koji se smatra da pripada traženoj grupi kriminalaca.
-Izgleda da su kriminalci kriptirali svoj razgovor kako ga se nebi moglo razumijeti.
+Izgleda da su kriminalci kriptirali svoj razgovor kako ga se nebi mogao razumijeti.
 
 Možeš li im pomoći da saznaju izvorni sadržaj poruka?
 
