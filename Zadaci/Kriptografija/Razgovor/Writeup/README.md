@@ -2,7 +2,7 @@
 
 Pregledom sadržaja razgovora, izgleda da se u njemu nalazi flag koji nije u čitljivom formatu:
 ```
-UMCCID[Wb4e_U4b3l4k_u1jćć_bk]
+UMCCID[U4b3l4k_u1jćć_bk]
 ```
 
 Može se uočiti kako je naziv jednog korisnika ```cezar85```.
@@ -22,3 +22,10 @@ Udaljenost ```C``` i ```U``` je jednako ```21``` (to je ključ).
 
 Poruka se može dekriptirani na online web stranici za dekriptiranje Cezarove šifre: https://cryptii.com/pipes/caesar-cipher .
 
+<p align="center">
+ <a href="https://github.com/user-attachments/assets/04d141bc-0a21-442a-a3a0-5c9494e8ea68?raw=true" target="_blank">
+  <img src="https://github.com/user-attachments/assets/04d141bc-0a21-442a-a3a0-5c9494e8ea68"/>
+  <a/>
+<p/>
+  
+Flag je ```CTFFOI[C4e3s4r_c1phh_er].```
