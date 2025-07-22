@@ -1,4 +1,4 @@
-# Tajanstveni signali
+# Tajna poruka
 Škola je otvorila novu grupu za etičko hakiranje.
 Svim zainteresiranim učenicima dala je zadatak u kojem treba otkriti sadržaj tajne poruke.
 Rješenje zadatka je uvjet za ulazak u grupu.
