@@ -22,9 +22,9 @@ Popis zadataka:
 (Opis Web)
 
 Popis zadataka:
-- [Forum](https://github.com/fnovak22/ctf-zavrsni/tree/main/Zadaci/Web%20eksploatacija/Forum)
-- [Galerija](https://github.com/fnovak22/ctf-zavrsni/tree/main/Zadaci/Web%20eksploatacija/Galerija)
-- [Todo](https://github.com/fnovak22/ctf-zavrsni/tree/main/Zadaci/Web%20eksploatacija/Todo)
+- [Forum](https://github.com/fnovak22/ctf-zavrsni/tree/main/Zadaci/Web/Forum)
+- [Galerija](https://github.com/fnovak22/ctf-zavrsni/tree/main/Zadaci/Web/Galerija)
+- [Todo](https://github.com/fnovak22/ctf-zavrsni/tree/main/Zadaci/Web/Todo)
 
 ## Binarna eksploatacija
 (Opis Binarna eksploatacija)
