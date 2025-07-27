@@ -86,3 +86,7 @@ Razlika između ove dvije boje nije vidljiva bez kontrole prikaza slike.
 
 Skrivena poruka je flag ```CTFFOI[R3V34L1NG_TR4C3S]```.
 
+## Edukativne smjernice
+- Lozinke se uvijek mogu razbiti pomoću _bruteforce_ metode. Samo je pitanje vremena koliko dugo je potrebno da se ona razbije.
+- Izbjegavaj upisivanje lozinke direktno u naredbeni redak - npr. korištenjem naredbe ```unzip -P```, lozinka raspakiravanja ostaje u vidljiva povijesti terminala. Bolje je upisati lozinku je ručno kada unzip to zatraži.
+- Slike mogu sadržavati skrivene poruke koje se mogu vidjeti nakon podešavanjem kontrasta/krivulja
