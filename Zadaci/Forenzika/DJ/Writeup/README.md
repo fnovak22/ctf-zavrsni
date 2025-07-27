@@ -47,3 +47,9 @@ Jasno se vidi da se u spektrogramu slike nalazi flag ```CTFFOI[h1dd3n_sp3ctrum]`
 
 ## Napomena
 Postavljanjem pogrješne ekstenzije na _WAVE audio_ datoteku (npr. _MP3_), ne može se dobiti ispravan prikaz skrivene poruke u spektrogramu zbog prisutne kompresije kod nekih audio formata (konkretno _MP3_ formata). MP3 koristi kompresiju gdje se pri kodiranju _MP3_ datoteke gubi dio podataka, uključujući visokofrekvencijske komponente koje bi mogle biti potrebne za očuvanje skrivenih informacija unutar spektrograma.
+
+## Edukativne smjernice
+- Nikad se ne smije pretpostavljati format datoteke na temelju naziva. Uvijek je potrebno provijeri format datoteke (npr. s alatom _file_)
+- Zvuk se može vidjeti kao slika kroz spektrogram. On se temelji na frekvencijskim uzorcima zvuka.
+- Koristan online alatu u kojem se može isprobati proces skrivanja i otkrivanja slika u spektrogramu zvuka je https://nsspot.herokuapp.com/imagetoaudio/
+- Treba paziti na kompresiju jer MP3 može _uništiti_ skrivene poruke u visokim frekvencijama
