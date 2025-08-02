@@ -101,7 +101,7 @@ io.interactive() #prebacuje stdin i stdout na standardni ulaz i izlaz, vraća ko
 Pokretanjem ove skripte, ispiše se flag ```CTFFOI[1nt3ger_0VERFL0W]```.
 
 ## Edukativne smjernice
-- Integer overflow je ranjivost gdje se pri aritmetičkoj operaciji (npr. množenju) prekorači maksimalna vrijednost u vraijabli tipa _int_, pa rezultat preleti u negativni raspon i može prevariti logiku usporedbe.
+- _Integer overflow_ je ranjivost kod koje se pri aritmetičkim operacijama (npr. množenju) prekorači maksimalna vrijednost u varijabli tipa _int_, pa rezultat preleti u negativni raspon i može prevariti logiku usporedbe.
 - Za zaštitu od ove vrste napada preporučuje se:
   - Prije računanja provjeriti hoće li ```cijena * količina``` ostati unutar valjanog raspona.
   - Uvesti ograničenja na ulazne brojeve (maksimalna količina) kako bi se spriječile ekstremne vrijednosti.
