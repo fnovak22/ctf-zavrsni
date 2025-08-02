@@ -52,7 +52,11 @@ Dobila se galerija administratora:
 
 Vidi se jedna slika koja sadrži flag: ```CTFFOI[g4ll1ERy_iIiD0r]```.
 
-
+## Edukativne smjernice
+ - IDOR (engl. _Insecure Direct Object Reference_) je ranjivost u kojoj napadač mijenjanjem izloženog ID-ja u URL-u ili zahtjevu dobiva neovlašten pristup tuđim resursima.
+ - Za zaštitu od ove vrste napada, preporučuje se:
+   - Uvijek provjeriti valjano vlasništvo nad resursom prije njegovog prikaza
+   - Bolje je koristiti nasumične tokene ili UUID (engl. _Universally Unique Identifier_) u URL-u za posluživanje resursa umjesto korištenja pravih internih ID-eva.
 
 
 
