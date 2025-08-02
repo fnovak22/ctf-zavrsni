@@ -62,11 +62,11 @@ Na stranici _Moj profil_ prikazuje se flag: ```CTFFOI[SQ7_Inj3ct1NG__F0rUUm]```.
 ## Edukativne smjernice
 - _SQL injection_ je napad u kojem napadač ubacuje zlonamjerni SQL kod kao korisnički unos da bi mogao neautorizirano pristupiti ili izmijeniti neke podatke.
 - Za zaštitu od ove vrste napada, preporučuje se:
-  - Provjeravaj i filtriraj svaki korisnički unos. To je potrebno raditi na klijentskoj strani i na serveru.
-  - Koristi parametrizirane ili pripremljene upite umjesto spajanja stringova.
-  - Ne prikazuj detaljne poruke o greškama korisniku (sakrij poruke iz baze ili iznimki)
-  - Postavi ograničenja na duljinu korisničkog unosa.
-  - Redovito pregledavaj logove prijava i neobične pokušaje pristupa.
-  - Primijeni princip najmanjih poslastica za korisničke račune i bazu podataka.
+  - Provjeravati i filtrirati svaki korisnički unos. To je potrebno raditi na klijentskoj strani i na serveru.
+  - Koristiti parametrizirane ili pripremljene upite umjesto spajanja stringova.
+  - Ne prikazivati detaljne poruke o greškama korisniku (sakriti poruke iz baze ili iznimki)
+  - Postaviti ograničenja na duljinu korisničkog unosa.
+  - Redovito pregledavati logove prijava i neobične pokušaje pristupa.
+  - Primijeniti načelo najmanjih povlastica za korisničke račune i bazu podataka.
 
 
