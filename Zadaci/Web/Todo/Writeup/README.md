@@ -52,5 +52,5 @@ Flag je ```CTFFOI[CcoOk1e_TamP_P3r1ng]```.
   - Nikada ne pohranjivati osjetljive ili autorizacijske podatke (npr. uloge) direktno spremišta na strani klijenta.
   - Označiti kolačiće kao _HttpOnly_ i _Secure_ kako bi ih klijent teže mijenjao ili presretao.
   - Potpisivati ili šifrirati vrijednosti kolačića (npr. pomoću HMAC-a) i na serveru provjeravati potpis prije upotrebe.
-  - Uvijek vršiti provjeru prava pristupa na poslužitelju prije posluživanja zaštićenih resursa, ne oslanjati se na podatke iz kolačića.
-- Ne izlagati skrivene ili osjetljive URL-ove u datoteci robots.txt, jer ona mora biti javno dostupna.
+  - Uvijek provjeravati prava pristupa na poslužitelju prije posluživanja zaštićenih resursa, ne oslanjati se na podatke iz kolačića.
+- Preporuća se ne izlagati skrivene ili osjetljive URL-ove u datoteci robots.txt, jer ona mora biti javno dostupna.
