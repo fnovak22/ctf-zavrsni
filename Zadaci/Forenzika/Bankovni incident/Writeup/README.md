@@ -49,3 +49,10 @@ Poruka se može najjednostavnije dekodirati pomoću nekog online alata.
 Dekodirana poruka je flag ```CTFFOI[DNS_exF1ltrati0n_att4ckK_]```.
 
 
+## Edukativne smjernice
+ - DNS eksfiltracija je tehnika skrivanja i slanja podataka unutar DNS upita, pa izgleda kao običan DNS promet. Informacije se najčešće skrivaju unutar poddomena DNS upita.
+ - S obzirom na nemogućnost zabranjenje DNS upita, za zaštitu od ove vrste napada se preporučuje:
+    - Ograničiti veličinu i učestalost DNS upita (postaviti ograničenja)
+    - Implementirati DNS filtering i blokirati nepoznate i sumnjive domene 
+    - Koristiti sustave za detekciju anomalija u DNS prometu (SIEM/IDS)
+    - Redovito provjeravati logove
