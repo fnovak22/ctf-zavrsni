@@ -53,3 +53,6 @@ print(m)
 ```
 
 Dešifrirana poruka je flag: ```CTFFOI[G3t_B1gg3R_Pr1mes]```.
+
+## Edukativne smjernice
+- Ako su faktori ```p``` i ```q```  mali ili nedovoljno veliki, napadač ih može brzo izračunati i tako može otkriti privatni ključ.
