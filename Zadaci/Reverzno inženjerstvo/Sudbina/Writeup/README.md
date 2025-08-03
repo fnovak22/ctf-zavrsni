@@ -16,7 +16,7 @@ On se može jednostavno pokrenuti. Postoje dva moguća izlaza:
   <a/>
 <p/>
 
-Potrebno je otkriti tajnu informaciju. Pošto je ovo ```.exe```datoteka, možemo ju otvoriti u IDA kako bismo vidjeli kako radi.
+Potrebno je otkriti tajnu informaciju. Pošto je ovo ```.exe``` datoteka, možemo ju otvoriti u IDA kako bismo vidjeli kako radi.
 
 
 
