@@ -158,4 +158,5 @@ Flag je ```CTFFOI[lY1ng_t0_PR0gr4ms45]```.
 _Napomena: Mogao se pokušati shvatiti način ispisa flag-a u metodi revealFlag(), no to bi zahtjevalo više vremena._
 
 ## Edukativne smjernice
-- Izbjegavati hardkodirane uvjete za zaštitu nekih dijelova programa. Preporuča se koristiti dinamičke provjere ili generirati stanje u trenutnu izvođenja programa (mo oni samo otežavaju probijanje zaštite).
+- Izbjegavati hardkodirane uvjete za zaštitu nekih dijelova programa jer se oni mogu lako zaobići.
+- Preporuča se kombinirati više vrsta zaštite od reverznog inženjerstva: dinamički uvjeti + anti-debug + checksum + ASLR + potpisivanje koda + stripanje simbola + obfuskacija. Svaki dodatni sloj povećava potrebno vrijeme i potrebne resurse za probijanje.
