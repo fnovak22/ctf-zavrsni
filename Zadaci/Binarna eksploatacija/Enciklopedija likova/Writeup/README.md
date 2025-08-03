@@ -201,5 +201,5 @@ Pokretanjem ove skripte, ispiše se flag ```CTFFOI[H3AP_c0ntr0l1ng_G0T]```
 - Za zaštitu od ove ranjivosti preporučuje se:
     - Provjeriti i ograničiti duljinu korisničkog unosa
     - Koristiti sigurnije funkcije za kopiranje niza: ```strncpy``` i ```memcpy_s```. One imaju točno definirane veličine za kopiranje.
-    - Uključiti heap canary zaštitu (gcc ... -fsanitize=undefined -fsanitize=address) kako bi se pri pisanju izvan granica buffera detektiralo prepisivanje i odmah zaustavilo izvođenje programa.
+    - Uključiti heap canary zaštitu (gcc ... -fsanitize=address) kako bi se pri pisanju izvan granica buffera detektiralo prepisivanje i odmah zaustavilo izvođenje programa.
     - Aktivirati ASLR/PIE kako bi heap adrese bile nasumične i teže predvidljive.
