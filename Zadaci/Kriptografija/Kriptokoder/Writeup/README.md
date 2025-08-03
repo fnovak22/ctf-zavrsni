@@ -166,3 +166,8 @@ print(m)
 ```
 
 Flag je: ```CTFFOI[n3VeRREN0ugh_enCRYpt1nG]```.
+
+## Edukativne smjernice
+- Ne preporuča se implementacija vlastitih algoritma za šifriranje poruka. Bolje je koristiti poznate i sigurne algoritme poput RSA.
+- Sigurnost kriptirane poruke temelji se na sigurnosti ključa (Kerchoff princip). Važno je da ključ koji se koristio u šifriranju ostane tajan.
+  
