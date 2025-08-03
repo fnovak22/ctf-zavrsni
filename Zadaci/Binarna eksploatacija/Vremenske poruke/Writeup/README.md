@@ -107,4 +107,11 @@ io.interactive()
 
 Pokretanjem ove skripte, ispiše se flag ```CTFFOI[TYP0_Ov3rFl0w]```
 
-
+## Edukacijske smjernice
+- Stack buffer overflow je napad kod kojeg unos veći od rezerviranog buffera prepiše podatke na stogu (npr. povratnu adresu) i omogući napadaču da promijeni tok izvršavanja programa.
+- Za zaštitu od ove ranjivosti preporučuje se:
+   - Pažljivo provjeriti veličine buffera i memorije koja se u njih zapisuje
+   - Provjeriti duljinu korisničkog unosa prije njegovog kopiranja u buffer
+   - Uključiti stack canary (kompajlirati s -fstack-protector-strong) koji detektira prepisivanje stoga i tada prekida izvođenje programa.
+   - Omogućiti NX (-z noexec) kako bi spriječili izvršavanje koda na stogu.
+   - Uključiti PIE/ASLR (-fPIE -pie) za nasumično raspoređivanje adresa u memoriji.
