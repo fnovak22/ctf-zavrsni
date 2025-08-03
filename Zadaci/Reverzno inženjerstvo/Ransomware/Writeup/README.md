@@ -102,16 +102,14 @@ from Crypto.Cipher import DES
 from Crypto.Util.Padding import unpad
 
 key = b'K3Ph.t6s'
-
 iv = bytes([0x1c, 0x31, 0xe1, 0x78, 0x9a, 0x4b, 0x3d, 0xef])
 
 data = open('flag.enc', 'rb').read()
+des = DES.new(key, DES.MODE_CBC, iv)
 
-cipher = DES.new(key, DES.MODE_CBC, iv)
-
-plaintext = unpad(cipher.decrypt(data), DES.block_size)
-
+plaintext = des.decrypt(data)
 print("Decrypted flag:", plaintext)
 ```
 
 Pokretanjem skripte, ispiše se flag: ```CTFFOI[SuRv1v3d_R4ns0mWWare]```.
+
