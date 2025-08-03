@@ -112,6 +112,6 @@ Pokretanjem ove skripte, ispiše se flag ```CTFFOI[TYP0_Ov3rFl0w]```
 - Za zaštitu od ove ranjivosti preporučuje se:
    - Pažljivo provjeriti veličine buffera i memorije koja se u njih zapisuje
    - Provjeriti duljinu korisničkog unosa prije njegovog kopiranja u buffer
-   - Uključiti stack canary (kompajlirati s -fstack-protector-strong) koji detektira prepisivanje stoga i tada prekida izvođenje programa.
-   - Omogućiti NX (-z noexec) kako bi spriječili izvršavanje koda na stogu.
-   - Uključiti PIE/ASLR (-fPIE -pie) za nasumično raspoređivanje adresa u memoriji.
+   - Uključiti stack canary (gcc ... -fstack-protector-strong) koji detektira prepisivanje stoga i tada prekida izvođenje programa.
+   - Omogućiti NX (gcc ... -z noexec) kako bi spriječili izvršavanje koda na stogu.
+   - Uključiti PIE/ASLR (gcc ... -fPIE -pie) za nasumično raspoređivanje adresa u memoriji.
