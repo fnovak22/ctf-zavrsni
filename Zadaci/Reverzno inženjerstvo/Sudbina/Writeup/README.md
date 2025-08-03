@@ -156,3 +156,6 @@ Prilikom ponovog pokretanja Console.exe, ispisuje se flag:
 Flag je ```CTFFOI[lY1ng_t0_PR0gr4ms45]```.
 
 _Napomena: Mogao se pokušati shvatiti način ispisa flag-a u metodi revealFlag(), no to bi zahtjevalo više vremena._
+
+## Edukativne smjernice
+- Izbjegavati hardkodirane uvjete za zaštitu nekih dijelova programa. Preporuča se koristiti dinamičke provjere ili generirati stanje u trenutnu izvođenja programa (mo oni samo otežavaju probijanje zaštite).
