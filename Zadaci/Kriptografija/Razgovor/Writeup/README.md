@@ -31,5 +31,5 @@ Poruka se može dekriptirani na online web stranici za dekriptiranje Cezarove š
 Flag je ```CTFFOI[C4e3s4r_c1phh_er].```
 
 ## Edukativne smjernice
-- Prilikom dešifriranja Cezarove šifre, treba obratiti pažnju na abecedu jer je ona različita kod različitih jezika. Bez točne abecede se ne može otkriti izvorna poruka.
+- Prilikom dešifriranja Cezarove šifre, treba obratiti pažnju na abecedu jer se ona razlikuje kod različitih jezika. Bez točne abecede se ne može otkriti izvorna poruka.
 - Ne preporučuje se koristiti Cezarovu šifru za zaštitu sadržaja poruka jer se ona vrlo lako probije. Umjesto nje, preporuča se koristiti jače metode šifriranja (npr. RSA) koje su otpornije na napade.
