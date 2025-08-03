@@ -63,4 +63,5 @@ Prema tome, flag je ```CTFFOI[17455872]```.
 
 
 
-
+## Edukativne smjernice
+- Za zaštitu osjetljivih konstanti u programu, preporuča se koristiti obfuskaciju ili ih generirati dinamički umjesto hardkodirano.
