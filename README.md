@@ -4,6 +4,7 @@ Ovaj repozitorij sadrži CTF zadatke koji služe kao otvoreni edukativni resursi
 Cilj CTF zadataka je pronaći zastavicu iskorištenjem ranjivosti u programu, pronalaskom skrivene poruke ili dešifriranjem poruke.
 
 Format flaga: ```CTFFOI\[[a-zA-Z0-9_]+\]```
+
 Primjer flaga: ```CTFFOI[pr1mjer_fl4g4]```
 
 Zadaci su podijeljeni u 6 kategorija koje se najčešće pojavljuju na poznatim CTF natjecanjima.
