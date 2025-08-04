@@ -9,6 +9,7 @@ Primjer flaga: ```CTFFOI[pr1mjer_fl4g4]```
 
 Zadaci su podijeljeni u 6 kategorija koje se najčešće pojavljuju na poznatim CTF natjecanjima.
 Svaka kategorija ima po 3 zadatka.
+Svaki zadatak sadrži poveznicu na rješenje zadatka koje dodatno sadrži edukativne smjernice povezane s temom zadatka.
 
 # Kategorije
 
