@@ -175,7 +175,10 @@ Kada se gornji crveni piksel poboja u bijelu boju i donji piksel poboja u crnu b
   <a/>
 <p/>
 
-
+## Edukativne smjernice
+- Ne preporuča se skenirati QR kodove iz nepoznati i neprovjerenih izvora jer oni mogu voditi na zlonamjerne web stranice, automatski pokrenuti preuzimanje zlonamjernog softvera ili ukrasti osjetljive podatke putem _phishing_-a.
+- QR kod koji je djelomično oštećen ponekad se može skenirati zbog ugrađene korekcije pogrešaka (engl. _Error correction_).
+- Neki dijelovi QR koda se mogu ručno popraviti na temelju standardizirane strukture QR koda. To može rezultirati ponovo ispravnim QR kodom.
 
 
 
