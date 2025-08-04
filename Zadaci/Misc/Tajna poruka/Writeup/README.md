@@ -43,4 +43,4 @@ CTFFOI[Enc0DinG_f0RR_l1f3]
 
 
 ## Edukativne smjernice
-- Prilikom susreta s nečitljivim nizom znakova, preporuča se prvo provjeriti ako se radi o nekoj vrsti enkodiranja u alatu poput CyberChefa. On može automatski prepoznati vrstu i primjeniti odgovarajući dekoder.
+- Prilikom susreta s nečitljivim nizom znakova, preporuča se prvo provjeriti ako se radi o nekoj vrsti kodiranja u alatu poput CyberChefa. On može automatski prepoznati vrstu i primjeniti odgovarajući dekoder.
