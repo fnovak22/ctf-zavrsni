@@ -6,7 +6,7 @@ M2d4dzRuSk0yRVJzUTJSVFZpVzd6Q0NnczREemZ1Uml1QkthNkVtOThIUllTa3A2YUZqYTFVRHc1b1M5
 ```
 
 Prema sadržaju slova, izgleda da se koristi neki encoding.
-Kod ovakvih situacija, preporuča se unijeti poruku u online alat za dekodiranje (i enkodiranje) poruka - https://gchq.github.io/CyberChef/ .
+Kod ovakvih situacija, preporuča se unijeti poruku u online alat za dekodiranje (i enkodiranje) poruka (npr. https://gchq.github.io/CyberChef/).
 Taj alat može prepoznati o kojoj vrsti encodinga se radi. Tada će alat prikazati ikonu čarobnog štapića koja se može pritisnitu kako bi se automatski dekorirala poruka.
 
 <p align="center">
