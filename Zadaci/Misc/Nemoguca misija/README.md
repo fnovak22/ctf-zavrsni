@@ -1,4 +1,4 @@
-# Nemoguca misija
+# Nemoguća misija
 
 Kao član tajnog tima, upravo si dobio zadatak koji se čini nemogućim. 
 Potrebo je razotkriti skrivenu kombinaciju znakova i probiti složenu zaštitu.
