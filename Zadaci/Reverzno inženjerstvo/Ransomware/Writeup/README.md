@@ -113,3 +113,10 @@ print("Decrypted flag:", plaintext)
 
 Pokretanjem skripte, ispiše se flag: ```CTFFOI[SuRv1v3d_R4ns0mWWare]```.
 
+## Edukativne smjernice
+- Ransomware je zlonamjerni program koji šifrira podatke na računalu i traži otkupninu da bi ih se ponovo dešifriralo.
+- Za zaštitu od ove vrste napada, preporuča se uvijek imati rezervnu kopiju važnih podataka koji se ne smiju izgubiti.
+- Ukoliko se dogodi napad ransomware-om preporuča se:
+  - Nikada ne platiti otkupninu jer nema garancije da će se vaši podaci vratiti. Također, na taj način se potiće zlonamjerne osobe da nastave napadati ransomware-om.
+  - Ne smije se odmah ugasiti računalo jer postoji šansa da se u RAM memoriji računala nalaze bitne informacije (ključevi) koji su potrebni za ručno dešifriranje _izgubljenih_ podataka
+  - Isključiti pristuip internetu i mreži na zaraženom računalu kako bi se spriječila daljnja zaraza ostalih računala u mreži.
