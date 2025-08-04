@@ -101,5 +101,6 @@ S korisničkim unosom ```b``` i ```a=823``` ispiše se flag: ```CTFFOI[3vAls_4nD
 ## Edukativne smjernice
 - Nikada se ne preporuća koristiti ```exec``` ili ```eval``` na neprovjerenom korisničkom unosu jer korisnik tako može izvršiti proizvoljan kod.
 - Umjesto korištenja ```exec```, preporuća se koristi sigurnije funkcije za parsiranje (npr. ```ast.literal_eval```).
-- Potrebo je pažljivo definirati dozvoljeni skup znakova u korisničkom unosu. Dopuštanje jednog nepoželjnog znaka može rezultirati ozbiljnim sigurnosnim propustom.
+- Potrebo je pažljivo definirati dozvoljeni skup znakova u korisničkom unosu. Dopuštanje jednog nepoželjnog znaka ponekad može rezultirati ozbiljnim sigurnosnim propustom.
+
 
