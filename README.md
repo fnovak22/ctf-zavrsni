@@ -1,4 +1,4 @@
-# CTF zadaci - FOI završni rad
+# CTF zadaci - FOI završni rad (praktičan dio)
 Ovaj repozitorij sadrži CTF zadatke koji služe kao otvoreni edukativni resursi s ciljem motiviranja budućih stručnjaka za daljnje učenje i istraživanje u području kibernetičke sigurnosti.
 
 Cilj CTF zadataka je pronaći zastavicu iskorištenjem ranjivosti u programu, pronalaskom skrivene poruke ili dešifriranjem poruke.
