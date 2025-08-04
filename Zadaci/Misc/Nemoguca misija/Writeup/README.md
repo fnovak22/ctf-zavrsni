@@ -97,3 +97,8 @@ else:
 
 Prvi broj koji je uspio rjesiti misiju je ```823```.
 S korisničkim unosom ```b``` i ```a=823``` ispiše se flag: ```CTFFOI[3vAls_4nD_Ex3cs]```.
+
+## Edukativne smjernice
+- Nikada se ne preporuća koristiti ```exec``` ili ```eval``` na neprovjerenom korisničkom unosu jer korisnik tako može izvršiti proizvoljan kod.
+- Umjesto korištenja ```exec```, preporuća se koristi sigurnije funkcije za parsiranje (npr. ```ast.literal_eval```).
+- Potrebo je pažljivo definirati dozvoljeni skup znakova u korisničkom unosu. Dopuštanje jednog nepoželjnog znaka može rezultirati sigurnosnim propustom.
