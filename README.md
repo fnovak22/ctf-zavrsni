@@ -6,6 +6,8 @@ Cilj CTF zadataka je pronaći zastavicu iskorištenjem ranjivosti u programu, pr
 Format flaga: ```CTFFOI\[[a-zA-Z0-9_]+\]```
 Primjer flaga: ```CTFFOI[pr1mjer_fl4g4]```
 
+Zadaci su podijeljeni u 6 kategorija koje se najčešće pojavljuju na poznatim CTF natjecanjima.
+Svaka kategorija ima po 3 zadatka.
 
 # Kategorije
 
