@@ -75,7 +75,7 @@ Raspakiravanjem zip arhive, dobije se jedna slika ```shema.png``` koja izgleda o
 
 Detaljnim pregledom slike može se pronaći skrivena informacija u slici. 
 Za otkrivanje skrivene informacije, potrebno je precizno kontroliranje svjetline i kontrasta slike kroz npr. krivulje (eng. curves).
-Ovo se može napraviti pomoču programa _paint.net_. Tamo je potrebno otići na ```Adjustments->Cruves```.
+Ovo se može napraviti pomoću programa _paint.net_. Tamo je potrebno otići na ```Adjustments->Cruves```.
 
 Stavljanjem jedne točke na krivulju osvijetljenosti i njenim pozicioniranjem prema donjem desnom kutu pojavi se skrivena poruka unutar slike u gornjem desnom kutu:
 
