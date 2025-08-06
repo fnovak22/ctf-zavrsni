@@ -1,6 +1,6 @@
 # Ransomware
 
-Nedavno je u tvtrku ušao ransomware virus kao rezultat phishinga. Jedan zaposlenik je slučajno pokrenuo izvršnu datoteku virusa na svojem linux računalu i tako je kriptirao datoteku s vrlo važnim informacijama.
+Nedavno je u poslovnu tvrtku ušao ransomware virus kao rezultat phishinga. Jedan zaposlenik je slučajno pokrenuo izvršnu datoteku virusa na svojem linux računalu i tako je kriptirao datoteku s vrlo važnim informacijama.
 
 Tvrtka se obratila tebi za pomoć. Žele vratiti izvorni sadržaj kriptirane datoteke. Možeš li im pomoći?
 
