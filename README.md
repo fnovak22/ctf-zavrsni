@@ -13,7 +13,7 @@ Svaki zadatak sadrži poveznicu na rješenje zadatka koje dodatno sadrži edukat
 
 # Kategorije
 
-## Forenzika
+## Digitalna forenzika
 Svrha i cilj ove kategorije je analizirati digitalne dokaze poput datoteka, memorije ili mrežnog prometa kako bi se pronašli skriveni podaci ili rekonstruirali događaji povezani s nekim sigurnosnim incidentom.
 
 Popis zadataka:
