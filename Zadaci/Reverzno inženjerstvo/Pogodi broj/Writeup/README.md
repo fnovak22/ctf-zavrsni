@@ -31,7 +31,7 @@ if (local_c * local_10 * local_14 == local_18) {
 ```local_18``` je varijabla koja sadrži korisnički unos, to se vidi iz linije ```std::istream::operator>>((istream *)&_ZSt3cin,&local_18);```.
 
 
-Varijable ```local_c```, ```local_10``` i ```local_14``` poprimaju hardkodirane vrijednosti koje se mogu isčitati iz programa.
+Varijable ```local_c```, ```local_10``` i ```local_14``` poprimaju hardkodirane vrijednosti koje se mogu iščitati iz programa.
 
 ```
 local_c = 0x14e4;
@@ -65,4 +65,5 @@ Prema tome, flag je ```CTFFOI[17455872]```.
 
 ## Edukativne smjernice
 - Za zaštitu osjetljivih konstanti u programu, preporuča se koristiti obfuskaciju ili ih generirati dinamički umjesto hardkodirano.
+
 
