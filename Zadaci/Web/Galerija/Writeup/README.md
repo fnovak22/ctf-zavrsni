@@ -30,7 +30,7 @@ Link za pregled vlastite galerija slika izgleda sumnjivo:
 Ako se registriramo i prijavimo kao drugi korisnik, tada će se link za pregled vlastite galerije slika promijeniti u ```http://127.0.0.1:5000/galerija/4```.
 Ovdje se primjećuje moguća ranjivost _IDOR (Insecure Direct Object Reference)_, gdje napadač može direktno mijenjati identifikator objekta i tako steći neovlašten pristup tuđim resursima.
 
-Pretpostavlja se da je brij na kraju URL-a zapravo ID vlasnika galerije slika. Promijenom URL-a u  ```http://127.0.0.1:5000/galerija/1``` dobi se galerija slika korisnika _test_korisnik_:
+Pretpostavlja se da je brij na kraju URL-a zapravo ID vlasnika galerije slika. Promjenom URL-a u  ```http://127.0.0.1:5000/galerija/1``` dobi se galerija slika korisnika _test_korisnik_:
 
 <p align="center">
  <a href="https://github.com/user-attachments/assets/dfc1e4f5-a757-4d7f-9f0c-c8fecc44633a?raw=true" target="_blank">
