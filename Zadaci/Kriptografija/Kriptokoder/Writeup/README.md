@@ -54,7 +54,7 @@ print(c)
 ```
 
 Cilj je izraditi program koji će dešifrirati kriptiranu poruku.
-Da bi to bilo moguće, prvo se mora dobro razumijeti postupak šifriranja poruke.
+Da bi to bilo moguće, prvo se mora dobro razumjeti postupak šifriranja poruke.
 
 Prvo se dohvate vrijednosti iz argumenta programa i zatim se poziva funkcija za kriptiranje:
 ```python
@@ -106,7 +106,7 @@ def r(b):
 
 To znači da će npr. bajt ```0100 1110``` postati ```1100 1001```.
 
-U drugom koraku se radi jednostavan XOR svakog bajta s bajtom ključa (ukoliko je ključ pre malen, tada se ponovo kreće od početka ključa):
+U drugom koraku se radi jednostavan XOR svakog bajta s bajtom ključa (ako je ključ pre malen, tada se ponovo kreće od početka ključa):
 ```python
 temp =  temp ^ key[i % len(key)]
 ```
