@@ -1,6 +1,6 @@
 # Razgovor
 
-Trenutno se istražuje novi kriminalistički slučaj.
+Istražuje se novi kriminalistički slučaj.
 Forenzički tim je izvukao razgovor iz javne aplikacije za koji se smatra da pripada traženoj grupi kriminalaca.
 Čini se da su kriminalci kriptirali svoj razgovor kako se ne bi mogao razumjeti.
 
