@@ -1,3 +1,4 @@
+# Bankovni incident
 Banka je nedavno dobila dojave o curenju osobnih podataka svojih klijenta. Ovo je vrlo veliki problem za njih.
 
 Postoji sumnja da je unutar poduzeća prisutna zlonamjerna osoba koja prenosi osjetljive podataka van poduzeća.
