@@ -1,6 +1,6 @@
 # Writeup
 
-Raspakiravanjem dobivene zip arhive dobe se slijedeće datoteke:
+Raspakiravanjem dobivene zip arhive dobe se sljedeće datoteke:
 
 ```
 └─$ tree log 
@@ -25,7 +25,7 @@ Image: C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe
 
 
 Događaji koji su povezani s mrežnim prometom su događaji povezani s DNS prometom. To su događaji čiji se Task category zove ```Dns query``` i imaju Event ID jednak ```22```.
-Moguće je primjeniti filter za prikazivanje događaja s određenim ID-om:
+Moguće je primijeniti filter za prikazivanje događaja s određenim ID-om:
 
 ![slika](https://github.com/user-attachments/assets/a22ee709-29e1-41e4-b2b9-4175b18a18e9)
 
@@ -35,7 +35,7 @@ Detaljnim pregledavanjem tih događaja, može se uočiti nekoliko sumnjivih doga
 ![slika](https://github.com/user-attachments/assets/3472b7fb-8084-41bd-a4bf-7285c4c4d63a)
 
 
-Prolaskom kroz svih 21 DNS query događaja pronađe se ukupnno 3 njih koji sadrže tu sumnjivu poddomenu:
+Prolaskom kroz svih 21 DNS query događaja pronađe se ukupno 3 njih koji sadrže tu sumnjivu poddomenu:
 
 ```
 Q1RGRk9JW0ROU19l.bestpracticesbanking.com
@@ -51,7 +51,7 @@ Dekodirana poruka je flag ```CTFFOI[DNS_exF1ltrati0n_att4ckK_]```.
 
 ## Edukativne smjernice
  - DNS eksfiltracija je tehnika skrivanja i slanja podataka unutar DNS upita, pa izgleda kao običan DNS promet. Informacije se najčešće skrivaju unutar poddomena DNS upita.
- - S obzirom na nemogućnost zabranjenje DNS upita, za zaštitu od ove vrste napada se preporučuje:
+ - S obzirom na nemogućnost zabranjenja DNS upita, za zaštitu od ove vrste napada se preporučuje:
     - Ograničiti veličinu i učestalost DNS upita (postaviti ograničenja)
     - Implementirati DNS filtering i blokirati nepoznate i sumnjive domene 
     - Koristiti sustave za detekciju anomalija u DNS prometu (SIEM/IDS)
