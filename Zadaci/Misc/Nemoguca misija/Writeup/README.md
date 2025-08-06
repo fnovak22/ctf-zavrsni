@@ -64,7 +64,7 @@ exec(f"{ime_varijable}={vrijednost_varijable}")
 ```
 
 Kao korisnički ulaz vrijednosti varijable može se unijeti: ```a=123```.
-Tako funkcija ```exec``` zapravo izvrši slijedeću naredbu: ```b=a=123```.
+Tako funkcija ```exec``` zapravo izvrši sljedeću naredbu: ```b=a=123```.
 Ovim načinom obje varijable poprime istu vrijednost.
 
 Može se preurediti prva _bruteforce_ skripta tako da provjerava sve moguće zajedničke vrijednosti korisničke varijable i varijable ```a```.
@@ -95,13 +95,14 @@ else:
 
 
 
-Prvi broj koji je uspio rjesiti misiju je ```823```.
+Prvi broj koji je uspio riješiti misiju je ```823```.
 S korisničkim unosom ```b``` i ```a=823``` ispiše se flag: ```CTFFOI[3vAls_4nD_Ex3cs]```.
 
 ## Edukativne smjernice
-- Nikada se ne preporuća koristiti ```exec``` ili ```eval``` na neprovjerenom korisničkom unosu jer korisnik tako može izvršiti proizvoljan kod.
-- Umjesto korištenja ```exec```, preporuća se koristi sigurnije funkcije za parsiranje (npr. ```ast.literal_eval```).
+- Nikada se ne preporuča koristiti ```exec``` ili ```eval``` na neprovjerenom korisničkom unosu jer korisnik tako može izvršiti proizvoljan kod.
+- Umjesto korištenja ```exec```, preporuča se koristi sigurnije funkcije za parsiranje (npr. ```ast.literal_eval```).
 - Potrebno je pažljivo definirati dozvoljeni skup znakova u korisničkom unosu. Dopuštanje jednog nepoželjnog znaka ponekad može rezultirati ozbiljnim sigurnosnim propustom.
+
 
 
 
