@@ -15,7 +15,7 @@ Značenje pojedine vrijednosti:
  - ```e``` je privatni eksponent
 
 Privatni ključ kod RSA tvore ```p``` i ```q```. 
-To bi trebala biti dva jako velika prosta broja kako se ```N``` nebi mogao lako rastaviti na proste faktore (faktorizirati).
+To bi trebala biti dva jako velika prosta broja kako se ```N``` ne bi mogao lako rastaviti na proste faktore (faktorizirati).
 Javni ključ ```N``` je jednak umnošku ```p``` i ```q```.
 
 Pregledom dane vrijednosti ```N```, može se zaključiti da je ona vrlo mala.
@@ -55,4 +55,4 @@ print(m)
 Dešifrirana poruka je flag: ```CTFFOI[G3t_B1gg3R_Pr1mes]```.
 
 ## Edukativne smjernice
-- Ako su faktori ```p``` i ```q```  mali ili nedovoljno veliki, napadač ih može brzo izračunati i tako može otkriti privatni ključ. Preporuća se koristiti brojeve koji imaju barem 2048 bita.
+- Ako su faktori ```p``` i ```q```  mali ili nedovoljno veliki, napadač ih može brzo izračunati i tako može otkriti privatni ključ. Preporuča se koristiti brojeve koji imaju barem 2048 bita.
