@@ -4,7 +4,7 @@ Tekst zadatka otkriva nam mali hint prema kojem možemo zaključiti da se važne
 To je uobičajena datoteka koja služi kako bi se web crawlerima i botovima odredilo koje dijelove web aplikacije smiju posjećivati.
 
 
-Pregledom sadržaja datoteke ```robots.txt``` može se uoćiti kako je endpoint ```/admin/flag``` zabranjen za pristupanje.
+Pregledom sadržaja datoteke ```robots.txt``` može se uočiti kako je endpoint ```/admin/flag``` zabranjen za pristupanje.
 
 ```
 User-agent: *
@@ -12,7 +12,7 @@ Disallow: /admin/flag
 ```
 
 
-Prilikom posjeta ```/admin/flag``` dobi se informacija o tome kako je to nedozvoljen dio web apliakcije.
+Prilikom posjeta ```/admin/flag``` dobi se informacija o tome kako je to nedozvoljen dio web aplikacije.
 
 <p align="center">
  <a href="https://github.com/user-attachments/assets/d73563b1-9e04-425b-b954-516ccf4f40b4?raw=true" target="_blank">
@@ -31,7 +31,7 @@ Nakon detaljnijeg pregleda web aplikacije, uočio se jedan sumnjivi dio:
   <a/>
 <p/>
 
-Izgleda da se u kolačićima sprema informacija o tome je li korisnik administartor.
+Izgleda da se u kolačićima sprema informacija o tome je li korisnik administrator.
 Trenutno je vrijednost postavljena na ```0```.
 Vrijednosti spremljene u kolačićima se mogu lako mijenjati na strani klijenta.
 
