@@ -1,13 +1,13 @@
 # Writeup
 
-U prloženoj datoteci nalazi se nečitljiva poruka:
+U priloženoj datoteci nalazi se nečitljiva poruka:
 ```
 M2d4dzRuSk0yRVJzUTJSVFZpVzd6Q0NnczREemZ1Uml1QkthNkVtOThIUllTa3A2YUZqYTFVRHc1b1M5Z1lzUGoy
 ```
 
 Prema sadržaju slova, izgleda da se koristi neki encoding.
 Kod ovakvih situacija, preporuča se unijeti poruku u online alat za dekodiranje (i enkodiranje) poruka (npr. https://gchq.github.io/CyberChef/).
-Taj alat može prepoznati o kojoj vrsti encodinga se radi. Tada će alat prikazati ikonu čarobnog štapića koja se može pritisnitu kako bi se automatski dekorirala poruka.
+Taj alat može prepoznati o kojoj vrsti encodinga se radi. Tada će alat prikazati ikonu čarobnog štapića koja se može pritisnuti kako bi se automatski dekorirala poruka.
 
 <p align="center">
  <a href="https://github.com/user-attachments/assets/6559fc0f-5e84-47e1-bf63-93cc18b2fdf2?raw=true" target="_blank">
@@ -43,4 +43,4 @@ CTFFOI[Enc0DinG_f0RR_l1f3]
 
 
 ## Edukativne smjernice
-- Prilikom susreta s nečitljivim nizom znakova, preporuča se prvo provjeriti ako se radi o nekoj vrsti kodiranja u alatu poput CyberChefa. On može automatski prepoznati vrstu i primjeniti odgovarajući dekoder.
+- Prilikom susreta s nečitljivim nizom znakova, preporuča se prvo provjeriti ako se radi o nekoj vrsti kodiranja u alatu poput CyberChefa. On može automatski prepoznati vrstu i primijeniti odgovarajući dekoder.
