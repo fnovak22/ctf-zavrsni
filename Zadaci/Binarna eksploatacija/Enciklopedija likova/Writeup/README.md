@@ -4,7 +4,7 @@
 
 
 
-Detaljnom analizom izvornog koda programa, uočena je potencijalna ranjivost programa **heap overflow** kod urešivanja opisa postojećeg lika.
+Detaljnom analizom izvornog koda programa, uočena je potencijalna ranjivost programa **heap overflow** kod uređivanja opisa postojećeg lika.
 
 ```
 printf("Novi opis (ostavi prazno za ostavljanje starog):\n");
@@ -32,7 +32,7 @@ Iz rezultata postojećih zaštita se može vidjeti da kompajlirani program ne sa
 
 Već je u prošlom zadatku objašnjen PIE pa se ovdje smatra da se razumije.
 
-Kako bi se bolje razumijela ranjivost **heap overflow**, može se pogledati sadržaj heap-a u programu pomoću programa ```gdb``` u kombinaciji s ```pwndbg```. Za vizualni prikaz heap-a koristi se naredba ```vis```:
+Kako bi se bolje razumjela ranjivost **heap overflow**, može se pogledati sadržaj heap-a u programu pomoću programa ```gdb``` u kombinaciji s ```pwndbg```. Za vizualni prikaz heap-a koristi se naredba ```vis```:
 
 
 ```
@@ -80,7 +80,7 @@ Ovdje se može iskoristiti napad ```GOT hijacking``` kako bi se preusmjerilo izv
 GOT (Global Offset Table) je tablica u memoriji koja pohranjuje adrese vanjskih funkcija i varijabli koje se dinamički povezuju tijekom izvršavanja programa.
 Ideja je da se uredi jedan zapis funkcije koja se poziva pomoću GOT tablice tako da pokazuje na funkciju ```ispisiTajnuPoruku```. Prva vanjska funkcija koja se poziva je ```strcspn```.
 
-Siruacija u kojoj se može iskoristiti napad je slijedeća:
+Situacija u kojoj se može iskoristiti napad je sljedeća:
  - Prvo se uređuje opis prvog lika (Heroj) na način da se u njega upiše: padding do drugog chunka + informacije o chunku (ostaju iste) + adresa funkcije ```strcspn``` iz GOT tablice
  - Zatim se uređuje ime drugog lika (Zlikovac) na način da se u njega upiše adresa funkcije ```ispisiTajnuPoruku```.
  - programski poziv funkcije ```strcspn``` uzrokuje poziv funkcije ```ispisiTajnuPoruku```
