@@ -26,7 +26,7 @@ Prvo se otvara funkcija main:
 
 Ovaj prikaz prikazuje tok rada programa u obliku instrukcija.
 Program započinje u najgornjem bloku.
-Na početku se rezervira memoristi prostor za varijable ```a``` i ```randomNum``` na stogu:
+Na početku se rezervira memorijski prostor za varijable ```a``` i ```randomNum``` na stogu:
 
 ```
 a= dword ptr -18h
@@ -78,11 +78,11 @@ cmp     [rsp+38h+randomNum], 3
 jge     short loc_140001280
 ```
 
-Provjerava se ako je slučajni brojveći od 3 (HEX), ako jest tada se skače na desni blok, ako nije onda se ostaje na lijevom bloku.
+Provjerava se ako je slučajni broj veći od 3 (HEX), ako jest tada se skače na desni blok, ako nije onda se ostaje na lijevom bloku.
 Oba bloka su zadužena za ispis poruke (```Tomorrow will be a gloomy rainy day!``` ili ```Tomorrow will be a wonderful sunny day!```)
 Poslije ovih blokova slijedi samo običan _system pause_ da program odma ne završi.
 
-Ukoliko se nije dogodio prvi skok tada se ostaje na prvom lijevom bloku:
+Ako se nije dogodio prvi skok tada se ostaje na prvom lijevom bloku:
 
 ```
 call    ?revealFlag@@YAXXZ ; revealFlag(void)
@@ -145,7 +145,7 @@ U IDA to možemo učiniti na slijedeći način:
 
 
 Sada sam se uredio binarni kod u Console.exe koji smo analizirali u IDA. Zapravo se moglo urediti i početno postavljanje vrijednosti 64h umjesto 5 ili se moglo zamijeniti instrukciju jnz sa jmp - dobio bi se isti rezultat.
-Prilikom ponovog pokretanja Console.exe, ispisuje se flag:
+Prilikom ponovnog pokretanja Console.exe, ispisuje se flag:
 
 <p align="center">
  <a href="https://github.com/user-attachments/assets/cb829290-c479-4f02-87d5-de1ac7339790?raw=true" target="_blank">
@@ -155,8 +155,8 @@ Prilikom ponovog pokretanja Console.exe, ispisuje se flag:
 
 Flag je ```CTFFOI[lY1ng_t0_PR0gr4ms45]```.
 
-_Napomena: Mogao se pokušati shvatiti način ispisa flag-a u metodi revealFlag(), no to bi zahtjevalo više vremena._
+_Napomena: Mogao se pokušati shvatiti način ispisa flag-a u metodi revealFlag(), no to bi zahtijevalo više vremena._
 
 ## Edukativne smjernice
 - Izbjegavati hardkodirane uvjete za zaštitu nekih dijelova programa jer se oni mogu lako zaobići.
-- Preporuča se kombinirati više vrsta zaštite od reverznog inženjerstva: dinamički uvjeti + anti-debug + checksum + ASLR + potpisivanje koda + stripanje simbola + obfuskacija. Svaki dodatni sloj povećava potrebno vrijeme i potrebne resurse za probijanje.
+- Preporuča se kombinirati više vrsta zaštite od reverznog inženjerstva: dinamički uvjeti + anti-debug + checksum + ASLR + potpisivanje koda + _stripanje_ simbola + obfuskacija. Svaki dodatni sloj povećava potrebno vrijeme i potrebne resurse za probijanje.
