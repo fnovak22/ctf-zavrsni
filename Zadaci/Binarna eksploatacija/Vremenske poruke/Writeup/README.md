@@ -107,7 +107,7 @@ io.interactive()
 
 Pokretanjem ove skripte, ispiše se flag ```CTFFOI[TYP0_Ov3rFl0w]```
 
-## Edukacijske smjernice
+## Edukativne smjernice
 - Stack buffer overflow je napad kod kojeg unos veći od rezerviranog memorijskog prostora (buffera) prepiše podatke na stogu (npr. povratnu adresu) i omogućuje napadaču da promijeni tok izvršavanja programa.
 - Za zaštitu od ove ranjivosti preporučuje se:
    - Pažljivo provjeriti veličine buffera i memorije koja se u njih zapisuje
