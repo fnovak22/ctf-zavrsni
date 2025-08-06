@@ -10,7 +10,7 @@ Prvo se može registrirati novi korisnik s proizvoljnim podacima:
   <a/>
 <p/>
 
-Pregledom sadržaja objavljanih poruka na forumu, može se zaključiti da je administrator foruma korisnik ```luka654```:
+Pregledom sadržaja objavljenih poruka na forumu, može se zaključiti da je administrator foruma korisnik ```luka654```:
 
 <p align="center">
  <a href="https://github.com/user-attachments/assets/06e5d9d5-632a-4824-80f4-ca6492559eb5?raw=true" target="_blank">
