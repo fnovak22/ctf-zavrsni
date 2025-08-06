@@ -7,7 +7,7 @@ l1.txt = ```????????0001110010010????????```
 l2.txt = ```????????1000101011111????????```
 l29.txt = ```????????0001110011101111100??```
 
-Nazivi datoteka upuićuju na to da se ovdje radi o linijama. 
+Nazivi datoteka upućuju na to da se ovdje radi o linijama. 
 Konkretno imamo 29 linija teksta. 
 Može se izraditi kratka python skripta koja spaja sadržaj svih datoteka u jednu datoteku:
 
@@ -35,7 +35,7 @@ combine_files(input_dir, output_file)
 U kodu se definirao naziv direktorija ```signali``` koji sadrži sve tekstualne datoteke. 
 Također se definirao i naziv datoteke ```combined_output.txt``` koja će sadržavati spojen sadržaj svih datoteka. 
 Ovdje se koristio _natsort_ za nazive datoteka kako bi se linije mogle prirodno sortirati.
-Bez toga bi se ```l11.txt``` učitao prije ```l2.txt``` što nebi odgovaralo ispravnom redoslijedu signala.
+Bez toga bi se ```l11.txt``` učitao prije ```l2.txt``` što ne bi odgovaralo ispravnom redoslijedu signala.
 Rezultat izgleda ovako:
 
 ```
@@ -114,7 +114,7 @@ with open(input_file_path, 'r') as file:
     print(f"Generiranje zavrseno - spremljeno kao '{output_file}'")
 ```
 
-Pokretanjem ove skripte se generirala slika koja je zamijenila znak ```0``` sa bijelim pikelom, znak ```1``` sa crnim pikselom i znak ```?``` sa crvenim pikselom. 
+Pokretanjem ove skripte se generirala slika koja je zamijenila znak ```0``` s bijelim pikselom, znak ```1``` s crnim pikselom i znak ```?``` s crvenim pikselom. 
 Slika izgleda ovako:
 
 <p align="center">
@@ -166,7 +166,7 @@ Zatim se doda _Quiet zone_:
 Nakon dodavanja stvari koje su stalno iste, kod se još uvijen ne može skenirati. 
 Preostaje nam pogađanje dijela QR koda.
 S lijeve strane gdje se nalaze dva crvena piksela je područje _Error correction_-a.
-S obzirom na to da su samo dva pikesla i svaki od njih može biti bijeli ili crni, postoji samo 4 mogućnosti koje se mogu ručno isprobati.
+S obzirom na to da su samo dva piksela i svaki od njih može biti bijeli ili crni, postoji samo 4 mogućnosti koje se mogu ručno isprobati.
 Kada se gornji crveni piksel poboja u bijelu boju i donji piksel poboja u crnu boju, QR kod se može skenirati:
 
 <p align="center">
