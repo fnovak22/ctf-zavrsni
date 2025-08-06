@@ -25,7 +25,7 @@ Može se probati dekompajlirati ```rans.exe``` pomoću alata Ghidra.
   <a/>
 <p/>
 
-Na početku main funkcije se deklaliraju lokalne varijabgle na stacku (do 22. linije).
+Na početku main funkcije se deklariraju lokalne varijable na stacku (do 22. linije).
 
 Zatim se inicijaliziraju dva stringa: ```flag.txt``` i ```flag.en```. Oni vjerojatno služe da se odredi iz koje datoteke će se sadržaj pročitati i u koju datoteku će se kriptirani sadržaj zapisati.
 
@@ -35,7 +35,7 @@ Slijedeći dio izgledao kao ključ za šifriranje:
 local_30 = "K3Ph.t6sd!Ua$#Ca";
 ```
 
-Nakon toga se ponovo polavljuje polovica toga ključa što je malo sumnjivo:
+Nakon toga se ponovo pojavljuje polovica toga ključa što je malo sumnjivo:
 ```
 local_a8[8] = 'K';
 local_a8[9] = '3';
@@ -77,7 +77,7 @@ Ovdje se ne vidi koji se algoritam točno koristio za šifriranje. Da bi se to s
 <p/>
 
 Vidi se da je dekompajler shvatio da se radi o DES algoritmu šifriranja u načinu rada CBC.
-DES je simetrični algoritam pifriranja koji koristi blokove. On koristi 8 bajtova za ključ i 8 bajtova za IV (inicijalizacijski vektor).
+DES je simetrični algoritam šifriranja koji koristi blokove. On koristi 8 bajtova za ključ i 8 bajtova za IV (inicijalizacijski vektor).
 Kod CBC načina rada, svaki blok ovisi o prethodnom bloku. Samo prvi blok ovisi o IV-u (on se XOR-a s IV-em).
 
 
@@ -99,7 +99,6 @@ Ostatak koda samo šifrira izvorni sadržaj datoteke ```flag.txt```, zapisuje ga
 Izrađena python skripta za dešifriranje:
 ```
 from Crypto.Cipher import DES
-from Crypto.Util.Padding import unpad
 
 key = b'K3Ph.t6s'
 iv = bytes([0x1c, 0x31, 0xe1, 0x78, 0x9a, 0x4b, 0x3d, 0xef])
@@ -116,8 +115,9 @@ Pokretanjem skripte, ispiše se flag: ```CTFFOI[SuRv1v3d_R4ns0mWWare]```.
 ## Edukativne smjernice
 - Ransomware je zlonamjerni program koji šifrira podatke na računalu i traži otkupninu da bi ih se ponovo dešifriralo.
 - Za zaštitu od ove vrste napada, preporuča se uvijek imati rezervnu kopiju važnih podataka koji se ne smiju izgubiti.
-- Ukoliko se dogodi napad ransomware-om preporuča se:
-  - Nikada ne platiti otkupninu jer nema garancije da će se vaši podaci vratiti. Također, na taj način se potiće zlonamjerne osobe da nastave napadati ransomware-om.
+- Ako se dogodi napad ransomware-om preporuča se:
+  - Nikada ne platiti otkupninu jer nema garancije da će se vaši podaci vratiti. Također, na taj način se potiče zlonamjerne osobe da nastave napadati ransomware-om.
   - Ne smije se odmah ugasiti računalo jer postoji šansa da se u RAM memoriji računala nalaze bitne informacije (ključevi) koji su potrebni za ručno dešifriranje _izgubljenih_ podataka
   - Isključiti pristup internetu i mreži na zaraženom računalu kako bi se spriječila daljnja zaraza ostalih računala u mreži.
+
 
