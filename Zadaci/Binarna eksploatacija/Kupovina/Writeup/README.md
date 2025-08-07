@@ -5,7 +5,7 @@
 Detaljnom analizom izvornog koda programa, uočena je potencijalna ranjivost programa **integer overflow** kod kupovine stvari. 
 
 Isječak koda koji sadrži ranjivost:
-```
+```c
 if(dostupneStvari[opcija-1].cijena * kolicina <= novac){
 		novac-= dostupneStvari[opcija-1].cijena;
 		printf("Kupljeno: %s (%dx)\n", dostupneStvari[opcija-1].ime,kolicina);
@@ -32,7 +32,7 @@ Kod dvokomplementnog prikaza brojeva, najznačajniji bit se koristi za mogućnos
 U zadatku dolazi do integer overflowa prilikom umnoška cijene i količine. Budući da su obje varijable tipa ```int```, i njihov umnožak je također tipa ```int```. Zbog ograničenja raspona ovog tipa podatka, ako je rezultat umnoška prevelik za pohranu, dolazi do integer overflow-a.
 
 Izrađen je kratak program koji traži najmanju količinu koja kada se pomnoži s cijenom stvari _Super tajna stvar_ uzrokuje integer overflow:
-```
+```c
 #include <stdio.h>
 
 int main()
@@ -68,7 +68,7 @@ Izraz ```dostupneStvari[opcija-1].cijena * kolicina <= novac``` postaje ```-2 14
 
 Za izradu rješenja može se napraviti Python skripta koja iskorištava integer overflow ranjivost u zadatku. Skripta koristi ```pwntools``` biblioteku za interakciju s kompajliranim programom, omogućujući slanje podataka i primanje odgovora od procesa pokrenutog programa. Nakon pokretanja programa, skripta odabire opciju kupnje stvari (3), zatim bira stvar _Super tajna stvar_ (5) i na kraju šalje količinu koja  uzrokuje integer overflow (962).
 
-```
+```python
 from pwn import *
 
 io = process("./kupovina") #da možemo slati i primati podatke od procesa
