@@ -51,5 +51,5 @@ Postavljanjem pogrješne ekstenzije na _WAVE audio_ datoteku (npr. _MP3_), ne mo
 ## Edukativne smjernice
 - Nikad se ne smije pretpostavljati format datoteke na temelju njenog naziva. Uvijek je potrebno provjeri format datoteke (npr. s alatom _file_)
 - Zvuk se može vidjeti kao slika kroz spektrogram. On se temelji na frekvencijskim uzorcima zvuka.
-- Koristan online alatu u kojem se može isprobati proces skrivanja i otkrivanja slika u spektrogramu zvuka je https://nsspot.herokuapp.com/imagetoaudio/
+- Koristan online alat u kojem se može isprobati proces sakrivanja i otkrivanja slika u spektrogramu zvuka je https://nsspot.herokuapp.com/imagetoaudio/
 - Treba paziti na kompresiju jer MP3 može _uništiti_ skrivene poruke u visokim frekvencijama
