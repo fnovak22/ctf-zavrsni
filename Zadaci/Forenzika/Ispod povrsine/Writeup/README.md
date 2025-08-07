@@ -65,7 +65,7 @@ unzip -P '@A5!b' disk.zip
 Preporuča se koristiti unzip bez parametra sa lozinkom. Tada unzip jednostavno traži da se naknadno unese lozinka (ona se ne sprema u povijest terminala).
 
 ```
-unzip -P disk.zip
+unzip disk.zip
 ```
 
 Raspakiravanjem zip arhive, dobije se jedna slika ```shema.png``` koja izgleda ovako:
