@@ -3,7 +3,7 @@
 ## Otkrivanje ranjivosti
 Detaljnom analizom izvornog koda programa, uočena je potencijalna ranjivost programa **stack buffer overflow** kod promijene zone.
 
-```
+```c
 void promijeniZonu(){
 	char priv[4];
 	printf("Unesi novu zonu (3 znaka):\n");
@@ -75,7 +75,7 @@ Skripta koristi ```pwntools``` biblioteku za interakciju s kompajliranim program
 Nakon pokretanja programa, skripta odabire opciju promijene zone (3) i zatim za novu zonu unosi korisnički unos koji preusmjerava izvođenje programa na adresu funkcije ispisiTajnuPoruku.
 
 
-```
+```python
 from pwn import *
 
 io = process("./poruka")
