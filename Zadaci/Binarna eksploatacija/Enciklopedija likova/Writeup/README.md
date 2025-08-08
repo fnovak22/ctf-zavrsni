@@ -6,7 +6,7 @@
 
 Detaljnom analizom izvornog koda programa, uočena je potencijalna ranjivost programa **heap overflow** kod uređivanja opisa postojećeg lika.
 
-```
+```c
 printf("Novi opis (ostavi prazno za ostavljanje starog):\n");
 char privOpis[500];
 strcpy(privOpis, likovi[index]->opis);
@@ -126,7 +126,7 @@ Koraci programa:
  - Unosi se novi naziv lika koji je adresa funkcije ```ispisiTajnuPoruku```.
 
 
-```
+```python
 from pwn import *
 
 io = process("./likovi")
