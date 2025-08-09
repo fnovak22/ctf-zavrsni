@@ -70,10 +70,12 @@ pwndbg> vis
 
 
 Ovdje se može vidjeti kako se na heap-u nalaze podaci o dva lika: Heroj i Zlikovac.
-Njihovi _chunk_-ovi započinju sa ```0x0000000000000021```. Nakon toga slijede dvije adrese koje također pokazuju na heap. To su adresa sadržaja imena lika i adresa sadržaja opisa lika.
+Njihovi _chunk_-ovi započinju sa ```0x0000000000000021```. Nakon toga slijede dvije adrese koje također pokazuju na _heap_.
+To su adresa sadržaja imena lika i adresa sadržaja opisa lika.
 Ispod tih adresa nalazi se stvarni sadržaj imena i opisa lika. Ime je veliko 50 bajtova, a opis 500 bajtova. 
 Vidi se da se podaci za oba lika nalaze jedan pored drugog.
-Budući da se na adresu opisa lika upisuje 600 bajtova (to je više nego rezervirana veličina), može se manipulirati sadržajem koji se nalazi izvan opisa lika. Ovdje je važno da nakon opisa prvog lika slijedi chunk za drugog lika.
+Budući da se na adresu opisa lika upisuje 600 bajtova (to je više nego rezervirana veličina), može se manipulirati sadržajem koji se nalazi izvan opisa lika. 
+Ovdje je važno da se _chunk_ drugog lika nalazi neposredno nakon _chunk_-a prvog lika (na _heap_-u).
 
  
 Ovdje se može iskoristiti napad ```GOT hijacking``` kako bi se preusmjerilo izvršavanje programa na funkciju ```ispisiTajnuPoruku```.
