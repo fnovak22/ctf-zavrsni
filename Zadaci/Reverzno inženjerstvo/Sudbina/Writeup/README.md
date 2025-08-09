@@ -22,7 +22,12 @@ Potrebno je otkriti tajnu informaciju. Pošto je ovo ```.exe``` datoteka, možem
 
 Prvo se otvara funkcija main:
 
-![slika](https://github.com/user-attachments/assets/e5cb8daa-3d9f-4158-b654-a3188e8b3b9f)
+<p align="center">
+ <a href="https://github.com/user-attachments/assets/e5cb8daa-3d9f-4158-b654-a3188e8b3b9f">
+  <img src="https://github.com/user-attachments/assets/e5cb8daa-3d9f-4158-b654-a3188e8b3b9f"/>
+  <a/>
+<p/>
+
 
 Ovaj prikaz prikazuje tok rada programa u obliku instrukcija.
 Program započinje u najgornjem bloku.
@@ -111,7 +116,12 @@ I nakon toga slijedi ovo:
 
 Također, možemo probati i dekompajlirati kod:
 
-![slika](https://github.com/user-attachments/assets/6a0b601f-6685-4c32-b96a-6fc0a85206fa)
+<p align="center">
+ <a href="https://github.com/user-attachments/assets/6a0b601f-6685-4c32-b96a-6fc0a85206fa">
+  <img src="https://github.com/user-attachments/assets/6a0b601f-6685-4c32-b96a-6fc0a85206fa"/>
+  <a/>
+<p/>
+
 
 No vidimo da on zapravo ne sadrži provjeru koja je uvijek istinita pa je dekompajler stavio samo izraz ```if(true)```.
 
