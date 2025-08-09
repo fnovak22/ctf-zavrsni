@@ -1,7 +1,7 @@
 # Kriptokoder
 
 Ema se boji mrežnog prisluškivanja pa je odlučila izraditi vlastiti algoritam za kriptiranje svojih poruka.
-Pomozi joj izraditi program koji će moći dešifrirati njezine poruke kako bi ih prijatelji razumjeli.
+Pomozi joj izraditi program koji će moći dešifrirati njezine poruke kako bi ih prijatelji mogli razumijeti.
 
 Ema je kriptirala svoju prvu poruku koju trebaš dešifrirati kako bi se potvrdilo dešifriranje.
 
