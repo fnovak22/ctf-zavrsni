@@ -23,7 +23,7 @@ Archive:  disk.zip
 Kako nam u tekstu zadatka piše da lozinka sadrži najvjerojatnije 5 znakova, može se koristiti **brute force** metoda probijanja lozinke zip arhive.
 Poznati program za probijanje lozinki koji uključuje ovu metodu je ```john``` (_John The Reaper_).
 
-Prije samog korištenja _john_, potrebno je koristiti alat ```zip2john``` kako bi se iz zip arhive izdvojili podaci koji se odnose na enkripcijski mehanizam.
+Prije samog korištenja alata _john_, potrebno je koristiti alat ```zip2john``` kako bi se iz zip arhive izdvojili podaci koji se odnose na enkripcijski mehanizam.
 Na kraju se ti podaci formatiraju u poseban oblik (hash format) koji je kompatibilan s _john_. (Izravno korištenje _john_-a nad izvornom zip arhivom nije mogće).
 
 ```
