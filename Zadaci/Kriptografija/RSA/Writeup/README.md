@@ -24,7 +24,7 @@ Radi toga, može se probati faktorizirati.
 To je internetska baza podataka koja pohranjuje faktorizacije velikih brojeva i omogućuje automatsko traženje njihovih prostih faktora.
 
 
-Kada se u FactorDB unese ```N```, uspješno se pronađu njegovi faktori:
+Kada se u _FactorDB_ unese ```N```, uspješno se pronađu njegovi faktori:
  - p = ```226720954803001339956417957096012760121```
  - q = ```255805983780078058582980500570307446393```
 
