@@ -1,6 +1,6 @@
 # Writeup
 
-Tekst zadatka otkriva nam mali hint prema kojem možemo zaključiti da se važne informacije nalaze u datoteci ```robots.txt```. 
+Tekst zadatka otkriva mali hint prema kojem se može zaključiti da se važne informacije nalaze u datoteci ```robots.txt```. 
 To je uobičajena datoteka koja služi kako bi se web crawlerima i botovima odredilo koje dijelove web aplikacije smiju posjećivati.
 
 
