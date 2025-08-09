@@ -46,7 +46,7 @@ Popis zadataka:
 - [Kriptokoder](https://github.com/fnovak22/ctf-zavrsni/tree/main/Zadaci/Kriptografija/Kriptokoder)
 
 ## Reverzno inženjerstvo
-Svrha i cilj ove kategorije je analizirati gotove programe bez izvornog koda kako bi se razumjela njihova struktura, logika i kako bi se ponekad pronašle neke skrivene funkcije. Ovdje se najčešće gotovi programi dekompajliraju kako bi se dobila struktura i logika programa, ali također se mogu pratiti kroz debugging. Ovdje se najčešće koriste poznati alati poput Ghidra i IDA Pro.
+Svrha i cilj ove kategorije je analizirati gotove programe bez izvornog koda kako bi se razumjela njihova struktura, logika i kako bi se ponekad pronašle neke skrivene funkcije. Gotovi programi se dekompajliraju kako bi se otkrila struktura i logika programa, ali također se mogu pratiti kroz debugging. Ovdje se najčešće koriste poznati alati poput Ghidra i IDA Pro.
 
 Popis zadataka:
 - [Pogodi broj](https://github.com/fnovak22/ctf-zavrsni/tree/main/Zadaci/Reverzno%20in%C5%BEenjerstvo/Pogodi%20broj)
