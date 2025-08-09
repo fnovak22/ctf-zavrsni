@@ -98,5 +98,5 @@ Skrivena poruka je flag ```CTFFOI[R3V34L1NG_TR4C3S]```.
 ## Edukativne smjernice
 - Lozinke se uvijek mogu razbiti pomoću _bruteforce_ metode. Samo je pitanje vremena koliko dugo je potrebno da se ona razbije.
 - Postoji web stranica na kojoj se može testirati jačina neke lozinke (https://www.passwordmonster.com/). Tamo se također prikazuje i potrebno vrijeme za probijanje lozinke. Ne preporuča se unos vlastite lozinke.
-- Izbjegavaj upisivanje lozinke direktno u naredbeni redak. Korištenjem naredbe ```unzip -P```, lozinka raspakiravanja ostaje vidljiva u povijesti terminala. Bolje je upisati lozinku ručno kada unzip to zatraži.
+- Izbjegavaj upisivanje lozinke direktno u naredbeni redak. Korištenjem naredbe ```unzip -P```, lozinka raspakiravanja ostaje vidljiva u povijesti terminala. Sigurnije je upisati lozinku ručno kada unzip to zatraži.
 - Slike mogu sadržavati skrivene poruke koje se mogu vidjeti nakon podešavanjem kontrasta/krivulja
