@@ -75,11 +75,11 @@ To su adresa sadržaja imena lika i adresa sadržaja opisa lika.
 Ispod tih adresa nalazi se stvarni sadržaj imena i opisa lika. Ime je veliko 50 bajtova, a opis 500 bajtova. 
 Vidi se da se podaci za oba lika nalaze jedan pored drugog.
 Budući da se na adresu opisa lika upisuje 600 bajtova (to je više nego rezervirana veličina), može se manipulirati sadržajem koji se nalazi izvan opisa lika. 
-Ovdje je važno da se _chunk_ drugog lika nalazi neposredno nakon _chunk_-a prvog lika (na _heap_-u).
+Važno je primijetiti da se _chunk_ drugog lika nalazi neposredno nakon _chunk_-a prvog lika (na _heap_-u).
 
  
 Ovdje se može iskoristiti napad ```GOT hijacking``` kako bi se preusmjerilo izvršavanje programa na funkciju ```ispisiTajnuPoruku```.
-GOT (Global Offset Table) je tablica u memoriji koja pohranjuje adrese vanjskih funkcija i varijabli koje se dinamički povezuju tijekom izvršavanja programa.
+GOT (engl. _Global Offset Table_) je tablica u memoriji koja pohranjuje adrese vanjskih funkcija i varijabli koje se dinamički povezuju tijekom izvršavanja programa.
 Ideja je da se uredi jedan zapis funkcije koja se poziva pomoću GOT tablice tako da pokazuje na funkciju ```ispisiTajnuPoruku```. Prva vanjska funkcija koja se poziva je ```strcspn```.
 
 Situacija u kojoj se može iskoristiti napad je sljedeća:
@@ -118,7 +118,7 @@ Potreban padding je 504 bajta.
 ## Iskorištenje ranjivosti
 
 
-Za izradu rješenja može se napraviti Python skripta koja iskorištava heap overflow ranjivost u zadatku. 
+Za izradu rješenja može se napraviti Python skripta koja iskorištava _heap overflow_ ranjivost u zadatku. 
 Koraci programa:
  - Odabire se opcija za uređivanja likova (4)
  - Odabire se prvi lik (1)
@@ -199,9 +199,9 @@ io.interactive()
 Pokretanjem ove skripte, ispiše se flag ```CTFFOI[H3AP_c0ntr0l1ng_G0T]```
 
 ## Edukativne smjernice
-- Heap overflow je napad kod kojeg se unos veći od rezerviranog memorijskog prostora na heapu (buffera) upisuje izvan granica buffera i može prebrisati podatke u susjednim chunk-ovima.
+- _Heap overflow_ je napad kod kojeg se unos veći od rezerviranog memorijskog prostora na _heap_-u (buffera) upisuje izvan granica buffera i može prebrisati podatke u susjednim _chunk_-ovima.
 - Za zaštitu od ove ranjivosti preporučuje se:
     - Provjeriti i ograničiti duljinu korisničkog unosa
     - Koristiti sigurnije funkcije za kopiranje niza: ```strncpy``` i ```memcpy_s```. One imaju točno definirane veličine za kopiranje.
-    - Uključiti heap canary zaštitu (gcc ... -fsanitize=address) kako bi se pri pisanju izvan granica buffera detektiralo prepisivanje i odmah zaustavilo izvođenje programa.
-    - Aktivirati ASLR/PIE kako bi adrese na heap-u bile nasumične i teže predvidljive.
+    - Uključiti _heap canary_ zaštitu (```gcc ... -fsanitize=address```) kako bi se pri pisanju izvan granica buffera detektiralo prepisivanje i odmah zaustavilo izvođenje programa.
+    - Aktivirati ASLR/PIE kako bi adrese na _heap_-u bile nasumične i teže predvidljive.
