@@ -30,7 +30,7 @@ Iz rezultata postojećih zaštita se može vidjeti da kompajlirani program ne sa
 Kad je PIE omogućen, sustav koristi tehnologiju poput ASLR (engl. _Address Space Layout Randomization_) za nasumično raspoređivanje adresa programa (npr. adrese funkcija, varijabla, stog...).
 Na taj način, čak i ako napadač uspije izvršiti napade, neće moći predvidjeti gdje će se funkcije ili kritični podaci nalaziti u memoriji.
 Zbog toga što program ne sadrži PIE, može se preurediti povratna adresa funkcije _promijeniZonu_ na bilo koju drugu adresu.
-To je moguće zbog toga što program pomoću fgets upisuje podatke izvan buffera.
+To je moguće zbog toga što program pomoću _fgets_ upisuje podatke izvan buffera.
 U ovom slučaju želimo program preusmjeriti na adresu funkcije _ispisiTajnuPoruku_.
 Potrebno je odrediti koji dio korisničkog unosa preuređuje povratnu adresu funkcije.
 Za to se može koristiti program ```gdb``` u kombinaciji s ```pwndbg```.
