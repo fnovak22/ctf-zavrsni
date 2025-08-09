@@ -3,7 +3,7 @@ Banka je nedavno dobila dojave o curenju osobnih podataka svojih klijenta. Ovo j
 
 Postoji sumnja da je unutar poduzeća prisutna zlonamjerna osoba koja prenosi osjetljive podatke izvan poduzeća.
 Samo nekoliko računala imaju pristup tim podacima. 
-Vele da bi njihove sigurnosne mjere trebale spriječiti slanje takvih podataka izvan mreže.
+Uvjereni su da bi njihove sigurnosne mjere trebale spriječiti slanje takvih podataka izvan mreže.
 
 Sigurnosni tim je prikupio Sysmon log računala za koje se smatra da je krivo za ovaj incident i zadužio Vas da ga analizirate.
 
