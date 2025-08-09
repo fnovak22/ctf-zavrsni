@@ -48,7 +48,7 @@ Prvo treba pogledati na kojoj adresi se nalazi buffer:
 Adresa gdje se nalazi naš buffer je ```0x7fffffffddac```.
 Broj bajtova koje zapisujemo je ```0x2c```  (decimalno je to 44).
 
-Zatim treba pogledati gdje se na stogu nalazi povratna adresa funkcije promijeniZonu:
+Zatim treba pogledati gdje se na stogu nalazi povratna adresa funkcije _promijeniZonu_:
 ```
 ────────[ STACK ]─────────
 00:0000│ rsp         0x7fffffffdda0 —▸ 0x7fffffffddb0 —▸ 0x7fffffffddd0 ◂— 1
@@ -57,7 +57,7 @@ Zatim treba pogledati gdje se na stogu nalazi povratna adresa funkcije promijeni
 03:0018│+008         0x7fffffffddb8 —▸ 0x402172 (main+302) ◂— jmp main+320
 ```
 
-Povratna adresa funkcije se uvijek nalazi ispod rbp. U ovom slučaju, povratna adresa funkcije promijeniZonu se nalazi na ```0x7fffffffddb8```.
+Povratna adresa funkcije se uvijek nalazi ispod rbp. U ovom slučaju, povratna adresa funkcije _promijeniZonu_ se nalazi na ```0x7fffffffddb8```.
 
 Da bi se izračunao potreban padding (udaljenost korisničkog unosa), potrebno je oduzeti adresu mjesta povratne adrese funkcije i adresu na kojoj se nalazi buffer.
 
