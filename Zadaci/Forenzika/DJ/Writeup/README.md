@@ -41,7 +41,11 @@ Prema sumnjivim frekvencijama i dijelu naziva pjesme _Spectrum_, može se posumn
 
 Otvaranjem vizualnog prikaza u spomenutom programu, dobije se ovakav izgled spektrograma:
 
-![slika](https://github.com/user-attachments/assets/46ad8b83-41f6-431c-8f6c-67727cbde345)
+<p align="center">
+ <a href="https://github.com/user-attachments/assets/46ad8b83-41f6-431c-8f6c-67727cbde345">
+  <img src="https://github.com/user-attachments/assets/46ad8b83-41f6-431c-8f6c-67727cbde345"/>
+  <a/>
+<p/>
 
 Jasno se vidi da se u spektrogramu slike nalazi flag ```CTFFOI[h1dd3n_sp3ctrum]```.
 
