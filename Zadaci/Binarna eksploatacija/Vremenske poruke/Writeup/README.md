@@ -57,22 +57,21 @@ Zatim treba pogledati gdje se na stogu nalazi povratna adresa funkcije _promijen
 03:0018│+008         0x7fffffffddb8 —▸ 0x402172 (main+302) ◂— jmp main+320
 ```
 
-Povratna adresa funkcije se uvijek nalazi ispod rbp. U ovom slučaju, povratna adresa funkcije _promijeniZonu_ se nalazi na ```0x7fffffffddb8```.
+Povratna adresa funkcije se uvijek nalazi ispod _rbp_. U ovom slučaju, povratna adresa funkcije _promijeniZonu_ se nalazi na ```0x7fffffffddb8```.
 
 Da bi se izračunao potreban padding (udaljenost korisničkog unosa), potrebno je oduzeti adresu mjesta povratne adrese funkcije i adresu na kojoj se nalazi buffer.
 
 ```ddb8 - ddac = C = 12```
 
 Izračunati padding je 12 bajtova. 
-Sada je potrebno nakon 12 bajtova korisničkog unosa unijeti adresu funkcije ispisiTajnuPoruku.
+Sada je potrebno nakon 12 bajtova korisničkog unosa unijeti adresu funkcije _ispisiTajnuPoruku_.
 
 
 ## Iskorištenje ranjivosti
 
-
-Za izradu rješenja može se napraviti Python skripta koja iskorištava stack buffer overflow ranjivost u zadatku.
+Za izradu rješenja može se napraviti Python skripta koja iskorištava _stack buffer overflow_ ranjivost u zadatku.
 Skripta koristi ```pwntools``` biblioteku za interakciju s kompajliranim programom, omogućujući slanje podataka i primanje odgovora od procesa pokrenutog programa. 
-Nakon pokretanja programa, skripta odabire opciju promijene zone (3) i zatim za novu zonu unosi korisnički unos koji preusmjerava izvođenje programa na adresu funkcije ispisiTajnuPoruku.
+Nakon pokretanja programa, skripta odabire opciju promijene zone (3) i zatim za novu zonu unosi korisnički unos koji preusmjerava izvođenje programa na adresu funkcije _ispisiTajnuPoruku_.
 
 
 ```python
@@ -104,14 +103,13 @@ io.interactive()
 
 ```
 
-
 Pokretanjem ove skripte, ispiše se flag ```CTFFOI[TYP0_Ov3rFl0w]```
 
 ## Edukativne smjernice
-- Stack buffer overflow je napad kod kojeg unos veći od rezerviranog memorijskog prostora (buffera) prepiše podatke na stogu (npr. povratnu adresu) i omogućuje napadaču da promijeni tok izvršavanja programa.
+- _Stack buffer overflow_ je napad kod kojeg unos veći od rezerviranog memorijskog prostora (buffera) prepiše podatke na stogu (npr. povratnu adresu) i omogućuje napadaču da promijeni tok izvršavanja programa.
 - Za zaštitu od ove ranjivosti preporučuje se:
    - Pažljivo provjeriti veličine buffera i memorije koja se u njih zapisuje
    - Provjeriti duljinu korisničkog unosa prije njegovog kopiranja u buffer
-   - Uključiti stack canary (gcc ... -fstack-protector-strong) koji detektira prepisivanje stoga i tada prekida izvođenje programa.
-   - Omogućiti NX (gcc ... -z noexec) kako bi spriječili izvršavanje koda na stogu.
-   - Uključiti PIE/ASLR (gcc ... -fPIE -pie) za nasumično raspoređivanje adresa u memoriji.
+   - Uključiti _stack canary_ (```gcc ... -fstack-protector-strong```) koji detektira prepisivanje stoga i tada prekida izvođenje programa.
+   - Omogućiti NX (```gcc ... -z noexec```) kako bi spriječili izvršavanje koda na stogu.
+   - Uključiti PIE/ASLR (```gcc ... -fPIE -pie```) za nasumično raspoređivanje adresa u memoriji.
