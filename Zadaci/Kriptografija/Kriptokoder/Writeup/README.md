@@ -15,7 +15,6 @@ Datoteka ```cypher.txt``` sadrži poruku koja je kriptirana:
 Datoteka ```key.txt``` sadrži ključ koji se koristio prilikom kriptiranja poruke:
 ```
 vaf5g-AZTFz65th/?.%
-
 ```
 
 
