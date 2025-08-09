@@ -11,8 +11,8 @@ Prema nazivu zadatka, može se zaključiti da se ovdje radi o RSA algoritmu enkr
 
 Značenje pojedine vrijednosti:
  - ```c``` predstavlja šifriranu poruku
- - ```N``` je javni dio ključa
- - ```e``` je javni eksponent
+ - ```N``` je dio javnog ključa
+ - ```e``` je javni eksponent i dio javnog ključa
 
 Privatni ključ kod RSA tvore ```p``` i ```q```. 
 To bi trebala biti dva jako velika prosta broja kako se ```N``` ne bi mogao lako rastaviti na proste faktore (faktorizirati).
