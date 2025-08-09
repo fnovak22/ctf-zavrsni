@@ -21,7 +21,7 @@ Kako bi izraz ```dostupneStvari[opcija-1].cijena * kolicina <= novac``` bio isti
 
 ## Objašnjenje ranjivosti
 
-Najveća moguća vrijednost varijable tipa int u C programskom jeziku je ```2 147 483 647```. Ako integer varijabla sadrži tu najveću vrijednost i inkrementira se za jedan, tada će nova vrijednost biti ```-2 147 483 648```. To se događa zbog integer overflow-a, gdje se nakon postizanja najveće moguće vrijednosti 32-bitnog int tipa (2 147 483 647) inkrementiranjem prelazi u negativni raspon zbog dvokomplementnog prikaza brojeva, gdje se najviši bit koristi za znak broja.
+Najveća moguća vrijednost varijable tipa int u C programskom jeziku je ```2 147 483 647```. Ako integer varijabla sadrži tu najveću vrijednost i inkrementira se za jedan, tada će nova vrijednost biti ```-2 147 483 648```. To se događa zbog integer overflow-a, gdje se nakon postizanja najveće moguće vrijednosti 32-bitnog int tipa (2 147 483 647) inkrementiranjem prelazi u negativni raspon zbog dvokomplementnog prikaza brojeva, gdje se najviši bit koristi za predznak broja.
 
 Na sljedećoj slici prikazan je primjer integer overflow-a u 8-bitnom dvokomplementnom prikazu brojeva (32-bitni prikaz je sličan).
 
