@@ -70,8 +70,12 @@ unzip disk.zip
 
 Raspakiravanjem zip arhive, dobije se jedna slika ```shema.png``` koja izgleda ovako:
 
+<p align="center">
+ <a href="https://github.com/user-attachments/assets/5b2857f3-32f0-4a6c-b365-8e59a7d74149">
+  <img src="https://github.com/user-attachments/assets/5b2857f3-32f0-4a6c-b365-8e59a7d74149"/>
+  <a/>
+<p/>
 
-![shema](https://github.com/user-attachments/assets/5b2857f3-32f0-4a6c-b365-8e59a7d74149)
 
 Detaljnim pregledom slike može se pronaći skrivena informacija u slici. 
 Za otkrivanje skrivene informacije, potrebno je precizno kontroliranje svjetline i kontrasta slike kroz npr. krivulje (eng. curves).
@@ -79,7 +83,12 @@ Ovo se može napraviti pomoću programa _paint.net_. Tamo je potrebno otići na 
 
 Stavljanjem jedne točke na krivulju osvijetljenosti i njenim pozicioniranjem prema donjem desnom kutu pojavi se skrivena poruka unutar slike u gornjem desnom kutu:
 
-![slika](https://github.com/user-attachments/assets/3d95f4fb-398f-4f55-9cc7-5d93d7cdd496)
+<p align="center">
+ <a href="https://github.com/user-attachments/assets/3d95f4fb-398f-4f55-9cc7-5d93d7cdd496">
+  <img src="https://github.com/user-attachments/assets/3d95f4fb-398f-4f55-9cc7-5d93d7cdd496"/>
+  <a/>
+<p/>
+
 
 Poruka je skrivena na način da se na bijelu pozadinu koja ima heksadekatsku vrijednost boje ```FFFFFF```, stavio tekst koji ima heksadekatsku vrijednost boje ```FEFFFF```.
 Razlika između ove dvije boje nije vidljiva bez kontrole prikaza slike.
