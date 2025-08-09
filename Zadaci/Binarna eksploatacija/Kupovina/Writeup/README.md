@@ -66,7 +66,7 @@ Izlaz programa:
 
 Iz izlaza programa vidimo kako je najmanja količina koja uzrokuje integer overflow jednaka ```962```. Umnoškom cijene i količine dobi se ```-2 147 446 596```
 
-Izraz ```dostupneStvari[opcija-1].cijena * kolicina <= novac``` postaje ```-2 147 446 596 <= novac```. Pošto je ```novac``` uvijek veći ili jednak nuli, izraz postaje istinit.
+Izraz ```dostupneStvari[opcija-1].cijena * kolicina <= novac``` postaje ```-2 147 446 596 <= novac```. Pošto je ```novac``` uvijek veći ili jednak nuli, izraz postaje uvijek istinit.
 
 
 ## Iskorištenje ranjivosti
