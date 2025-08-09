@@ -27,7 +27,7 @@ Iz rezultata postojećih zaštita se može vidjeti da kompajlirani program ne sa
 
 ## Objašnjenje ranjivosti
 
-Kad je PIE omogućen, sustav koristi tehnologiju poput ASLR (Address Space Layout Randomization) za nasumično raspoređivanje adresa programa (npr. adrese funkcija, varijabla, stog...).
+Kad je PIE omogućen, sustav koristi tehnologiju poput ASLR (engl. _Address Space Layout Randomization_) za nasumično raspoređivanje adresa programa (npr. adrese funkcija, varijabla, stog...).
 Na taj način, čak i ako napadač uspije izvršiti napade, neće moći predvidjeti gdje će se funkcije ili kritični podaci nalaziti u memoriji.
 Zbog toga što program ne sadrži PIE, može se preurediti povratna adresa funkcije promijeniZonu na bilo koji drugu adresu.
 To je moguće zbog toga što program pomoću fgets upisuje podatke izvan buffera.
