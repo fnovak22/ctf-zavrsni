@@ -25,7 +25,12 @@ Najveća moguća vrijednost varijable tipa int u C programskom jeziku je ```2 14
 
 Na sljedećoj slici prikazan je primjer integer overflow-a u 8-bitnom dvokomplementnom prikazu brojeva (32-bitni prikaz je sličan).
 
-![slika](https://github.com/user-attachments/assets/cf8c8832-7cf6-407f-92f5-4d14117470fb)
+<p align="center">
+ <a href="https://github.com/user-attachments/assets/cf8c8832-7cf6-407f-92f5-4d14117470fb">
+  <img src="https://github.com/user-attachments/assets/cf8c8832-7cf6-407f-92f5-4d14117470fb"/>
+  <a/>
+<p/>
+
 
 Kod dvokomplementnog prikaza brojeva, najznačajniji bit se koristi za mogućnost spremanja negativnih brojeva. U ovom primjeru, najznačajniji bit nosi vrijednost ```-128```. Ako se na vrijednost ```127``` (koja u binarnom prikazu ima sve jedinice osim najznačajnijeg bita) pribroji jedan, tada će se sve jedinice pretvoriti u nule i jedinica će se prenijeti na najznačajniji bit.
 
