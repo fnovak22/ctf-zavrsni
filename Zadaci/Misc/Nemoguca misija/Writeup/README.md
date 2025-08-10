@@ -45,19 +45,20 @@ if(eval(f"( {ime} != a)")):
         return False
 ```
 
-To znači da vrijednost korisničke varijable i varijable ```a``` mora biti jednaka.
-Trenutno je vrijednost varijable ```a``` postavljeno na početku programa na ```2```.
+To znači da vrijednost korisničke varijable i lokalne varijable ```a``` mora biti jednaka.
+Trenutno se vrijednost lokalne varijable ```a``` postavlja na početku programa na ```2```.
 Ne postoji drugi dio programa koji mijenja vrijednost varijable ```a```.
 
 Detaljnijim pregledom kod programa, može se uočiti jedan sumnjivi dio:
 
 ```
-zabranjeni_znakovi = {"(",")","+","-","=","/","*","_",",",".","'",'"',"$",":"," ","\\","a"}
+zabranjeni_znakovi = {"(",")","+","-","=","/","*","_",",",".","'",'"',"$",":"," ","\\","a"} # Naziv varijeble
 ...
-zabranjeni_znakovi = {"(",")","+","-","/","*","_",",",".","'",'"',"$",":"," ","\\"}
+zabranjeni_znakovi = {"(",")","+","-","/","*","_",",",".","'",'"',"$",":"," ","\\"} # Vrijednost varijeble
 ```
 
 Razlika prikazanih skupova znakova je u tome da drugi skup znakova ne sadrži znakove ```=``` i ```a```.
+
 Zapravo, kod drugog skupa znakova moguće je korištenje funkcije ```exec``` za manipuliranje vrijednosti varijable ```a```.
 ```
 exec(f"{ime_varijable}={vrijednost_varijable}")
@@ -99,9 +100,11 @@ Prvi broj koji je uspio riješiti misiju je ```823```.
 S korisničkim unosom ```b``` i ```a=823``` ispiše se flag: ```CTFFOI[3vAls_4nD_Ex3cs]```.
 
 ## Edukativne smjernice
-- Nikada se ne preporuča koristiti ```exec``` ili ```eval``` na neprovjerenom korisničkom unosu jer korisnik tako može izvršiti proizvoljan kod.
-- Umjesto korištenja ```exec```, preporuča se koristi sigurnije funkcije za parsiranje (npr. ```ast.literal_eval```).
+- Nikada se ne preporuča koristiti ```exec``` ili ```eval``` na neprovjerenom korisničkom unosu jer korisnik tako može ponekad izvršiti neki nedopušteni kod.
+- Uz korištenje ```exec```, preporuća se provijeriti korisnički unos za vrijednost pomoću funkcije za parsiranje ```ast.literal_eval```. Ona na siguran način parsira python literale. Kod parsiranja nečeg što ne predstavlja python literal, baci se iznimka.
+- U ovoj situaciji, umjesto korištenja ```exec```, sigurnije je koristiti jednostavan riječnik koji će mapirati ime varijable na njezinu vrijednost. Tako će se izbjeći potreba za korištenjem funkcije ```exec```.
 - Potrebno je pažljivo definirati dozvoljeni skup znakova u korisničkom unosu. Dopuštanje jednog nepoželjnog znaka ponekad može rezultirati ozbiljnim sigurnosnim propustom.
+
 
 
 
