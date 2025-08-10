@@ -54,7 +54,7 @@ Popis zadataka:
 - [Ransomware](https://github.com/fnovak22/ctf-zavrsni/tree/main/Zadaci/Reverzno%20in%C5%BEenjerstvo/Ransomware)
 
 ## Razno
-Svrha i cilj ove kategorije je obuhvatiti zadatke koji konkretno ne spadaju u ostale kategorije. Ovdje se često pronalaze općeniti zadaci ili logičke zagonetke. Cilj je vježba kreativnog razmišljanja i kombiniranje različitih tehnika iz različitih područja.
+Svrha i cilj ove kategorije je obuhvatiti zadatke koji konkretno ne spadaju u ostale kategorije. Ovdje se često pronalaze općeniti zadaci ili logičke zagonetke. Cilj je vježba kreativnog razmišljanja i kombiniranje različitih tehnika iz više područja.
 
 Popis zadataka:
 - [Tajna poruka](https://github.com/fnovak22/ctf-zavrsni/tree/main/Zadaci/Misc/Tajna%20poruka)
