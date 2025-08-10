@@ -7,7 +7,7 @@ Detaljnom analizom izvornog koda programa, uočena je potencijalna ranjivost pro
 Isječak koda koji sadrži ranjivost:
 ```c
 if(dostupneStvari[opcija-1].cijena * kolicina <= novac){
-		novac-= dostupneStvari[opcija-1].cijena;
+		novac-= dostupneStvari[opcija-1].cijena * kolicina;
 		printf("Kupljeno: %s (%dx)\n", dostupneStvari[opcija-1].ime,kolicina);
 		
 		if(opcija-1 == 4){
