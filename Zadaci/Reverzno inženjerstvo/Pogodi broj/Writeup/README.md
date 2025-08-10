@@ -61,10 +61,11 @@ Pokušaj unosa toga broja potvrđuje da je ovaj broj točan:
 
 Prema tome, flag je ```CTFFOI[17455872]```.
 
-
+_Napomena: Moglo se pokušati otkriti tajni broj pomoću bruteforce metode, no to bi zahtijevalo više vremena._
 
 ## Edukativne smjernice
 - Za zaštitu osjetljivih konstanti u programu, preporuča se koristiti obfuskaciju ili ih generirati dinamički umjesto hardkodirano.
+
 
 
 
