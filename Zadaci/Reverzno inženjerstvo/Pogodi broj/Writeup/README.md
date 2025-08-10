@@ -9,7 +9,7 @@ Kada se pokrene, program traži korisnika da unese (pogodi) broj:
   <a/>
 <p/>
 
-Dekompajliranjem programa u Ghidr-a, dobi se slijedeći kod:
+Dekompajliranjem programa u alatu Ghidra, dobi se slijedeći kod:
 
 
 <p align="center">
@@ -65,6 +65,7 @@ Prema tome, flag je ```CTFFOI[17455872]```.
 
 ## Edukativne smjernice
 - Za zaštitu osjetljivih konstanti u programu, preporuča se koristiti obfuskaciju ili ih generirati dinamički umjesto hardkodirano.
+
 
 
 
