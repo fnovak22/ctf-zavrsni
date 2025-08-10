@@ -25,7 +25,7 @@ Može se probati dekompajlirati ```rans.exe``` pomoću alata Ghidra.
   <a/>
 <p/>
 
-Na početku main funkcije se deklariraju lokalne varijable na stacku (do 22. linije).
+Na početku main funkcije se deklariraju lokalne varijable na stogu (do 22. linije).
 
 Zatim se inicijaliziraju dva stringa: ```flag.txt``` i ```flag.en```. Oni vjerojatno služe da se odredi iz koje datoteke će se sadržaj pročitati i u koju datoteku će se kriptirani sadržaj zapisati.
 
@@ -113,11 +113,13 @@ print("Decrypted flag:", plaintext)
 Pokretanjem skripte, ispiše se flag: ```CTFFOI[SuRv1v3d_R4ns0mWWare]```.
 
 ## Edukativne smjernice
-- Ransomware je zlonamjerni program koji šifrira podatke na računalu i traži otkupninu da bi ih se ponovo dešifriralo.
+- _Ransomware_ je zlonamjerni program koji šifrira podatke na računalu i traži otkupninu da bi ih se ponovo dešifriralo.
 - Za zaštitu od ove vrste napada, preporuča se uvijek imati rezervnu kopiju važnih podataka koji se ne smiju izgubiti.
 - Ako se dogodi napad ransomware-om preporuča se:
-  - Nikada ne platiti otkupninu jer nema garancije da će se vaši podaci vratiti. Također, na taj način se potiče zlonamjerne osobe da nastave napadati ransomware-om.
+  - Nikada ne platiti otkupninu jer nema garancije da će se vaši podaci vratiti. Također, na taj način se potiče zlonamjerne osobe da nastave napadati _ransomware_-om.
   - Ne smije se odmah ugasiti računalo jer postoji šansa da se u RAM memoriji računala nalaze bitne informacije (ključevi) koji su potrebni za ručno dešifriranje _izgubljenih_ podataka
   - Isključiti pristup internetu i mreži na zaraženom računalu kako bi se spriječila daljnja zaraza ostalih računala u mreži.
+- Nikada ne pokretati nepoznate programe iz neprovjerenih izvora.
+
 
 
