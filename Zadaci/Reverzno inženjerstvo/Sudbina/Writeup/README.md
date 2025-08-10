@@ -128,12 +128,11 @@ No vidimo da on zapravo ne sadrži provjeru koja je uvijek istinita pa je dekomp
 
 
 
-
 Da bismo prevarili program i natjerali ga da se grana u drugom smjeru (da ne izvrši prvi skok), možemo modificirati binarni kod izvršne datoteke.
 U IDA to možemo učiniti na slijedeći način: 
  1. Pritisnuti (označiti) liniju ```cmp eax, 64h ; 'd'```
  2. Edit --> Patch Program --> Assemble
- 4. Zamijeniti operand 64h sa operandom 5
+ 4. Zamijeniti operand ```64h``` s operandom ```5```
  5. Pritusnuti OK
 
 <p align="center">
@@ -154,8 +153,8 @@ U IDA to možemo učiniti na slijedeći način:
  8. Pritusnuti OK
 
 
-Sada sam se uredio binarni kod u Console.exe koji smo analizirali u IDA. Zapravo se moglo urediti i početno postavljanje vrijednosti 64h umjesto 5 ili se moglo zamijeniti instrukciju jnz sa jmp - dobio bi se isti rezultat.
-Prilikom ponovnog pokretanja Console.exe, ispisuje se flag:
+Sada sam se uredio binarni kod u _Console.exe_ koji smo analizirali u IDA. Zapravo se moglo urediti i početno postavljanje vrijednosti ```64h``` umjesto ```5``` ili se moglo zamijeniti instrukciju jnz sa jmp (dobio bi se isti rezultat).
+Prilikom ponovnog pokretanja _Console.exe_, ispisuje se flag:
 
 <p align="center">
  <a href="https://github.com/user-attachments/assets/cb829290-c479-4f02-87d5-de1ac7339790?raw=true" target="_blank">
