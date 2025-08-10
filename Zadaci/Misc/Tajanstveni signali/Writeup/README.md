@@ -1,11 +1,11 @@
 # Writeup
 
 Preuzimanjem zip datoteke i njezinim raspakiravanjem, dobi se nekoliko tekstualnih datoteka. 
-Nazivi datoteka su od l1 do l29. Sadržaj datoteka je sličan, ali različit.
+Nazivi datoteka su od ```l1``` pa sve do ```l29```. Sadržaj datoteka je sličan, ali različit.
 
-l1.txt = ```????????0001110010010????????```
-l2.txt = ```????????1000101011111????????```
-l29.txt = ```????????0001110011101111100??```
+- l1.txt = ```????????0001110010010????????```
+- l2.txt = ```????????1000101011111????????```
+- l29.txt = ```????????0001110011101111100??```
 
 Nazivi datoteka upućuju na to da se ovdje radi o linijama. 
 Konkretno imamo 29 linija teksta. 
@@ -70,8 +70,8 @@ Rezultat izgleda ovako:
 ????????0001110011101111100??
 ```
 
-Detaljnim pregledom rezultata spajanja, može se uočiti kako kutevi (dole lijevo, gore lijevo, gore desno) sadrže _kocku_ znakova ```?```. 
-Takav izgled upućuje na to da se radi o QR kodu.
+Detaljnim pregledom rezultata spajanja, može se uočiti kako kutevi (dole lijevo, gore lijevo, gore desno) sadrže znakove ```?``` u obliku pravokutnika. 
+Takav izgled upućuje na to da se ovdje radi o QR kodu.
 Znak ```0``` može značiti da se radi o bijeloj boji, a znak ```1``` da se radi o crnoj boji.
 No čemu služi znak ```?```? 
 Može se izraditi python skripta koja generira sliku na temelju rezultata spajanja:
@@ -125,7 +125,7 @@ Slika izgleda ovako:
 
 
 Ovo izgleda kao dio QR koda, ali on se ne može skenirati.
-Pregledom pravila o formatiranju QR koda, mogu se napraviti popravci QR koda koji mogu dovesti do mogućnosti njegova skeniranja.
+Pregledom pravila o formatiranju (standarda) QR koda, mogu se napraviti popravci QR koda koji mogu dovesti do mogućnosti njegova skeniranja.
 
 Prvo se dodaju _Finder patterns_:
 <p align="center">
@@ -167,6 +167,7 @@ Nakon dodavanja stvari koje su stalno iste, kod se još uvijen ne može skenirat
 Preostaje nam pogađanje dijela QR koda.
 S lijeve strane gdje se nalaze dva crvena piksela je područje _Error correction_-a.
 S obzirom na to da su samo dva piksela i svaki od njih može biti bijeli ili crni, postoji samo 4 mogućnosti koje se mogu ručno isprobati.
+
 Kada se gornji crveni piksel poboja u bijelu boju i donji piksel poboja u crnu boju, QR kod se može skenirati:
 
 <p align="center">
