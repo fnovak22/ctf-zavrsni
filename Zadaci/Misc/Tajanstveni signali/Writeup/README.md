@@ -127,6 +127,14 @@ Slika izgleda ovako:
 Ovo izgleda kao dio QR koda, ali on se ne može skenirati.
 Pregledom pravila o formatiranju (standarda) QR koda, mogu se napraviti popravci QR koda koji mogu dovesti do mogućnosti njegova skeniranja.
 
+Standard QR koda (izvor Wikipedia):
+<p align="center">
+ <a href="https://github.com/user-attachments/assets/58e9399e-6e50-4876-8b52-4c0a189017ee" target="_blank">
+  <img src="https://github.com/user-attachments/assets/58e9399e-6e50-4876-8b52-4c0a189017ee" width="400"/>
+  <a/>
+<p/>
+
+
 Prvo se dodaju _Finder patterns_:
 <p align="center">
  <a href="https://github.com/user-attachments/assets/cfbcd6d5-04ca-44d3-8a89-f190a220a85d?raw=true" target="_blank">
