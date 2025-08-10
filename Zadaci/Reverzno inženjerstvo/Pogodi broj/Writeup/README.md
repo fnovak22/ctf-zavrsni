@@ -1,5 +1,5 @@
 # Writeup
-Unutar preuzete zip arhive se nalazi izvršni program pogodi_broj.exe. 
+Unutar preuzete zip arhive se nalazi izvršni program _pogodi_broj.exe_. 
 On se može jednostavno pokrenuti.
 Kada se pokrene, program traži korisnika da unese (pogodi) broj:
 
@@ -65,5 +65,6 @@ Prema tome, flag je ```CTFFOI[17455872]```.
 
 ## Edukativne smjernice
 - Za zaštitu osjetljivih konstanti u programu, preporuča se koristiti obfuskaciju ili ih generirati dinamički umjesto hardkodirano.
+
 
 
