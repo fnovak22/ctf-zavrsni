@@ -6,6 +6,8 @@ Tvrtka se obratila tebi za pomoć. Žele vratiti izvorni sadržaj kriptirane dat
 
 Ovdje možeš preuzeti izvršnu datoteku virusa i kriptiranu datoteku: [rans.zip](https://github.com/fnovak22/ctf-zavrsni/raw/refs/heads/main/Zadaci/Reverzno%20in%C5%BEenjerstvo/Ransomware/Datoteke/rans.zip)
 
+_**Napomena**: Izvršna datoteka nije stvarni virus (sigurna je). Program samo pretvori datoteku flag.txt u flag.enc prilikom pokretanja._
+
 ---
 
 Rješenje: [Writeup](https://github.com/fnovak22/ctf-zavrsni/tree/main/Zadaci/Reverzno%20in%C5%BEenjerstvo/Ransomware/Writeup)
