@@ -1,5 +1,5 @@
 # Todo
-Maja razvija novu web aplikaciju za spremanje osobnih zadataka (Todo lista). 
+Paula razvija novu web aplikaciju za spremanje osobnih zadataka (Todo lista). 
 Zabrinuta je da joj web crawleri ili botovi ne pristupe povjerljivim dijelovima aplikacije pa se za to dodatno pobrinula.
 Pomozi joj provjeriti ako je njezina web aplikacija sigurna.
 
