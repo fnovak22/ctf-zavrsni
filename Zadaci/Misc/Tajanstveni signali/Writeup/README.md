@@ -1,6 +1,6 @@
 # Writeup
 
-Preuzimanjem zip datoteke i njezinim raspakiravanjem se dobije nekoliko tekstualnih datoteka. 
+Preuzimanjem zip datoteke i njezinim raspakiravanjem, dobi se nekoliko tekstualnih datoteka. 
 Nazivi datoteka su od l1 do l29. Sadržaj datoteka je sličan, ali različit.
 
 l1.txt = ```????????0001110010010????????```
