@@ -123,7 +123,7 @@ Također, možemo probati i dekompajlirati kod:
 <p/>
 
 
-No vidimo da on zapravo ne sadrži provjeru koja je uvijek istinita pa je dekompajler stavio samo izraz ```if(true)```.
+No vidimo da on zapravo ne sadrži provjeru koja je uvijek istinita pa je dekompajler zanemario tu _if_ provjeru.
 
 
 
