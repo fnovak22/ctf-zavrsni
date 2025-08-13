@@ -7,6 +7,10 @@
 Detaljnom analizom izvornog koda programa, uočena je potencijalna ranjivost programa **heap overflow** kod uređivanja opisa postojećeg lika.
 
 ```c
+likovi[brojac_likova] = malloc(sizeof(Lik));
+likovi[brojac_likova]->ime = (char*)malloc(50);
+likovi[brojac_likova]->opis = (char*)malloc(500);
+...
 printf("Novi opis (ostavi prazno za ostavljanje starog):\n");
 char privOpis[500];
 strcpy(privOpis, likovi[index]->opis);
