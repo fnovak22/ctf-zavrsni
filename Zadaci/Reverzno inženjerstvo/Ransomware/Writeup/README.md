@@ -107,7 +107,7 @@ data = open('flag.enc', 'rb').read()
 des = DES.new(key, DES.MODE_CBC, iv)
 
 plaintext = des.decrypt(data)
-print("Decrypted flag:", plaintext)
+print(plaintext)
 ```
 
 Pokretanjem skripte, ispiše se flag: ```CTFFOI[SuRv1v3d_R4ns0mWWare]```.
@@ -120,6 +120,7 @@ Pokretanjem skripte, ispiše se flag: ```CTFFOI[SuRv1v3d_R4ns0mWWare]```.
   - Ne smije se odmah ugasiti računalo jer postoji šansa da se u RAM memoriji računala nalaze bitne informacije (ključevi) koji su potrebni za ručno dešifriranje _izgubljenih_ podataka
   - Isključiti pristup internetu i mreži na zaraženom računalu kako bi se spriječila daljnja zaraza ostalih računala u mreži.
 - Nikada ne pokretati nepoznate programe iz neprovjerenih izvora.
+
 
 
 
